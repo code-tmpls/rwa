@@ -1,0 +1,6 @@
+#APPS:
+# VK
+apt-fe/node_modules
+apt-fe/dist
+
+
