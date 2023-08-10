@@ -1,10 +1,22 @@
 import React from "react";
-import { ContainerFluid ,Row ,Col, Card, Colors, Badge } from "e-ui-react";
-import { Switch, Choice, Button, TextBox, ProgressBar, Hover } from "e-ui-react";
+import { ContainerFluid ,Row ,Col, Card, Colors, Badge, Switch, Choice, Button, TextBox, 
+  ProgressBar, Hover } from "e-ui-react";
+import Sections from "./../Sections/index.js";
 
 const Component1 = () =>{
 return(<>
 <ContainerFluid>
+    <Row>
+      <Col xl={12} xxl={4}>
+        <h4 className="bs-header" style={{ borderTop:'1px solid #ccc', borderBottom:'1px solid #ccc', 
+          padding:'8px 2px', margin:'15px 0px' }}><b>Examination Name</b></h4>
+      </Col>
+    </Row>
+    <Row>
+      <Col xl={4} xxl={4}>
+          <Sections />
+      </Col>
+    </Row>
     <Row>
         <Col xl={4} xxl={4}>
       <div>
@@ -16,44 +28,7 @@ return(<>
             </Col>
             </Row>
             </div>
-            <div style={{padding: '5px'}}>
-            <Card backgroundColor={Colors.light}>
-                <Row>
-                    <Col xl={6} xxl={6}><b>Questions</b>
-                    <Row>
-        <Col>
-          <Badge type="success" label="01" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="success" label="02" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="success" label="03" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="danger" label="04" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="danger" label="05" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="success" label="06" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="warning" label="07" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="info" label="08" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="warning" label="09" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-
-          <Badge type="info" label="10" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} />
-        </Col>
-        </Row>
-      </Col>
-                    <Col xl={6} xxl={6}>
-                    <Badge type="success" label="4" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} /> <b> Questions Answered</b><br />
-                    <Badge type="danger" label="2" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} /> <b> Not Answered</b><br />
-                    <Badge type="warning" label="4" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} /> <b> Not Yet visited</b><br />
-                    <Badge type="info" label="4" size="12" style={{ marginRight: '5px', marginBottom: '5px' }} /> <b> Review for Later</b><br />
-                    </Col>
-                 
-                </Row>   
-            </Card>
-            </div>            
+                     
     </div>
         </Col>
         <Col xl={8} xxl={8}>
