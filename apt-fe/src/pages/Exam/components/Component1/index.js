@@ -1,7 +1,7 @@
 import React from "react";
 import { ContainerFluid ,Row ,Col, Card, Colors, Badge, Switch, Choice, Button, TextBox, 
   ProgressBar, Hover } from "e-ui-react";
-import Sections from "./../Sections/index.js";
+import Sections from "../Sections/index.js";
 
 const Component1 = () =>{
 return(<>

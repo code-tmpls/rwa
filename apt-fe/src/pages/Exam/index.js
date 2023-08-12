@@ -4,11 +4,11 @@ import { HeaderMenu } from '@Config/HeaderMenu.js';
 import Component1 from './components/Component1/index.js';
 
 
-const Menu = ()=>{
+const Exam = ()=>{
  return (<>
  <Header1 />
  <Component1 />
  </>);
 };
 
-export default Menu;
+export default Exam;

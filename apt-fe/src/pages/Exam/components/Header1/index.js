@@ -6,6 +6,7 @@ const Header1 = ()=>{
  const [progressBarData, setProgressBarData] = useState(100);
  const stopWatchTime = { hours: 0, minutes: 6, seconds: 0 };
  const [showAlert, setShowAlert] = useState(false);
+ const [showExam, setShowExam] = useState();
 
 
  useEffect(()=>{
