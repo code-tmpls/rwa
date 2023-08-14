@@ -36,15 +36,12 @@ return(<>
             <Row>
                 <Col xl={4} xxl={4}>
                     <h4><b>Question-01</b></h4>
-                    <div style={{padding:'5px'}}><b>Time Left !!!</b>
-                      <ProgressBar type="info" progress="75" height="18" value="00:20:00" />
                       <div style={{paddingTop:'10px'}}><b>Average Time taken to solve a question:</b>
                       <TextBox name="surname" /></div>
                       <div style={{paddingTop:'5px'}}><Choice type="checkbox" id="numbers" name="numbers"
                     value={[{ id:1, label:"Mark for Review", value:"1"}]} 
                     disabled={false} />
                     </div> 
-                    </div>
                     
                 </Col>
                 <Col xl={8} xxl={8}>
