@@ -20,7 +20,9 @@ const FilterMenu = ()=>{
       }]; 
  return (<div style={{ marginBottom:'25px' }}>
 
-  <Card padding={15}>
+  <Card style={{ border:"2px solid #953062" }}>
+  <div align="center" style={{ backgroundColor:'#953062', color:'#fff', padding:'8px' }}><b>FILTER PROFILES</b></div>
+  <div style={{ padding:'15px' }}>
   <Form name="browseMatrimonyFilter" btnSubmit={{
                  align:'center',
                  btnType:'primary',
@@ -41,19 +43,19 @@ const FilterMenu = ()=>{
                 
              }}
              >
-    <div style={{ padding: '15px' }}>
+    <div style={{ margin: '0px 5px' }}>
         <div>
             <Choice type="radio" id="lookingFor" name="lookingFor" label="I'm looking for" 
                     value={[{ id:1, label:"Bride", value:"1"},
                             { id:2, label:"Bridegroom", value:"2" }]} 
                     disabled={false} />
-        </div><hr/>
+        </div><hr style={{ borderBottom:'1px solid #953062', opacity: 1 }}/>
         <div className="mtop15p">
             <DateTimePicker type="datePicker" label="My Date of Birth" id="dateOfBirth" name="dateOfBirth" />
             <div className="mtop15p">
               <Range name="ageDifference" label="Age Difference (5 years - 8 years)" start={5} end={8} />
             </div>
-        </div><hr/>
+        </div><hr style={{ borderBottom:'1px solid #953062', opacity: 1 }}/>
         <div className="mtop15p">
             <Switch type="checkbox" id="maritalStatus" name="maritalStatus" label="Marital Status" 
                     value={[{ id:1, label:"Unmarried", value:"1"},
@@ -61,12 +63,12 @@ const FilterMenu = ()=>{
                             { id:3, label:"Widow", value:"3" },
                             { id:4, label:"Widower", value:"4" }]} 
                     disabled={false} />
-        </div><hr/>
+        </div><hr style={{ borderBottom:'1px solid #953062', opacity: 1 }}/>
         <div className="mtop15p">
             <Dropdown  id="motherTonguePreference" name="motherTonguePreference" placeholder="Mother Tongue Preference" label="Mother Tongue" 
                     searchLabel="Search a Language" menu={menuOptions} 
                     value={dropdownValue} />
-        </div><hr/>
+        </div><hr style={{ borderBottom:'1px solid #953062', opacity: 1 }}/>
         <div className="mtop15p">
                 <Switch type="checkbox" id="profession" name="profession" label="Profession" 
                     value={[{ id:1, label:"Private Sector", value:"1"},
@@ -79,6 +81,7 @@ const FilterMenu = ()=>{
             </div>
         </div>
    </Form>
+  </div>
   </Card>
  </div>);
 };

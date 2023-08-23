@@ -11,17 +11,26 @@ const BrowseMatrimony = ()=>{
     return (<>
       <ContainerFluid>
         <Row>
+          <Col xl={12} xxl={12}>
+            <div style={{ color:'#953062' }}>
+              <h3 className="bs-header" style={{ borderBottom:'2px solid #953062', marginBottom:'15px' }}>
+                <b>Browse Matrimony Profiles</b>
+              </h3>
+            </div>
+          </Col>
+        </Row>
+        <Row>
           <Col xl={4} xxl={3}>
-            <DisplayCard />
+            <DisplayCard index={1} />
           </Col>
           <Col xl={4} xxl={3}>
-            <DisplayCard />
+            <DisplayCard index={2}  />
           </Col>
           <Col xl={4} xxl={3}>
-            <DisplayCard />
+            <DisplayCard index={3}  />
           </Col>
           <Col xl={4} xxl={3}>
-            <DisplayCard />
+            <DisplayCard index={4}  />
           </Col>
         </Row>
       </ContainerFluid>
