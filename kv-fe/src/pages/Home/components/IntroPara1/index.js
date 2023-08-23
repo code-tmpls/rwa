@@ -1,5 +1,5 @@
 import React from "react";
-import { ContainerFluid, Row, Col, TextSearch } from "e-ui-react";
+import { ContainerFluid, Row, Col } from "e-ui-react";
 
 const IntroPara = ()=>{
  return (<>
@@ -9,22 +9,7 @@ const IntroPara = ()=>{
         <Col xl={12} xxl={12}>
             <div align="center" style={{ fontSize:'22px' }}>
                 <h4 style={{ lineHeight:'36px' }}><b>Your Profiles in KalyanaVeena.com are more Safer than any Other Matrimony Platform.<br/>
-                We keep your Data safe and Secure. Find your Known by Profile Id :</b></h4>
-				<div>
-				<TextSearch name="profileId" 
-        				placeholder="Enter Known Profile Id"
-						width="280px"
-						validation={{
-							required:{
-								value: true,
-								errorMessage:"This is a Mandatory Field"
-							},
-							minLength:{
-								value: 2,
-								errorMessage:"Message should be greator than 2"
-							}
-						}} />
-				</div>
+                We keep your Data safe and Secure.</b></h4>
             </div>
         </Col>
     </Row>

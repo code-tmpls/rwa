@@ -3,7 +3,7 @@ import { Card, Avatar, Button, ContainerFluid, Row, Col, Icon, Colors } from "e-
 
 const DisplayCard = ({ index })=>{
  const bgColors = ["#fbf4f4", "#eefbef", "#fdefff", "#fff6e9", "#eaf6ff"];
- return (<>
+ return (<div style={{ marginBottom:'15px' }}>
  <Card backgroundColor={bgColors[index]} style={{ border:'2px solid #953062' }}>
     <div style={{ margin: '15px 5px' }}>
         <ContainerFluid>
@@ -46,7 +46,7 @@ const DisplayCard = ({ index })=>{
         </ContainerFluid>
     </div>
  </Card>
- </>);
+ </div>);
 };
 
 export default DisplayCard;
