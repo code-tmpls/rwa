@@ -22,7 +22,7 @@ const Header1 = ()=>{
             <img src="./assets/images/logo.png" style={{ width: '100px', height:'auto' }}/>
         </Col>
         <Col xl={6} xxl={6}>
-            <Card backgroundColor="#efefef" >
+            <Card padding={15} backgroundColor="#efefef" >
                 <div style={{ padding:'5px 10px' }}>
                     <b>Note:</b> Don't Refresh or Close this Window, it is considered as you have completed your Examination.
                 </div>

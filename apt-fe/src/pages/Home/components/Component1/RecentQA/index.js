@@ -5,7 +5,7 @@ import Queries from './Queries/index.js';
 const RecentQA = ()=>{
     return(<>
      <div style={{ padding:'15px' }}>
-        <Card backgroundColor={Colors.light}>
+        <Card padding={15} backgroundColor={Colors.light}>
         <Queries />
         </Card>
         </div>

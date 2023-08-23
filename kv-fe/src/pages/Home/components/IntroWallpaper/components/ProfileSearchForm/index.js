@@ -73,8 +73,7 @@ const ProfileSearchForm = ()=>{
        };
   
       return (<>
-          <Card>
-            <div style={{ padding:'15px' }}>
+          <Card padding={15}>
              <div align="center"><b>FIND YOUR DESIRED PROFILE</b></div>
              <Form name="registerForm" btnSubmit={{
                  align:'center',
@@ -103,7 +102,6 @@ const ProfileSearchForm = ()=>{
              <div className="mtop15p"><OccupationStatusField /></div>
              <div className="mtop15p"><ProfessionField /></div>
              </Form>
-            </div>
          </Card>
       </>);
    };

@@ -20,7 +20,7 @@ const FilterMenu = ()=>{
   }
 ]; 
  return (<div style={{ marginBottom:'25px' }}>
-  <Card>
+  <Card padding={15}>
     <div style={{ padding: '15px' }}>
         <div>
             <Choice type="radio" id="numbers" name="numbers" label="I'm looking for" 

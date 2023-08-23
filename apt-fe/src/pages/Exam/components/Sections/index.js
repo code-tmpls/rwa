@@ -18,7 +18,7 @@ const Sections = ()=>{
  const QuestionBrief = ()=>{
   return (<div style={{ marginTop:'15px' }}>
     <div><b>Note:</b></div>
-    <Card backgroundColor="#282a36">
+    <Card padding={15} backgroundColor="#282a36">
         <div style={{ padding:'15px' }}>
             <Row>
                 <Col xl={6} xxl={6}>
@@ -40,7 +40,7 @@ const Sections = ()=>{
  }
 
  return (<>
-    <Card backgroundColor="#efefef">
+    <Card padding={15} backgroundColor="#efefef">
         <div style={{ padding:'15px' }}>
             <div>
                 <div align="center" className="mbot15p"><h5 className="bs-header"><b>Section-A (One Answer Objective Type)</b></h5><hr/></div>
@@ -55,7 +55,7 @@ const Sections = ()=>{
                   </Row>
                 </ContainerFluid>
                 <div style={{marginTop: '5px'}}>
-                    <Card backgroundColor="#282a36">
+                    <Card padding={15} backgroundColor="#282a36">
                         <div style={{ padding:'15px' }}>
                             <Row>
                                 <Col xl={12} xxl={12}>

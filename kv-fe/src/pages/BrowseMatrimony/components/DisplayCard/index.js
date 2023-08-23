@@ -3,7 +3,7 @@ import { Card, Avatar, Badge, ContainerFluid, Row, Col, Icon } from "e-ui-react"
 
 const DisplayCard = ()=>{
  return (<>
- <Card>
+ <Card padding={15}>
     <div style={{ marginTop:'-3px' }}>
         <span style={{ backgroundColor:'dodgerBlue', padding:'5px', borderTopLeftRadius:'6px', borderTopRightRadius:'6px' }}>1991 Batch</span>
     </div>
