@@ -1,44 +1,61 @@
 import React, { useState } from "react";
-import { Card, Switch, Choice, Dropdown, TextBox } from "e-ui-react";
+import { Card, Form, Switch, Choice, Dropdown, DateTimePicker, Range  } from "e-ui-react";
 
 const FilterMenu = ()=>{
     const [ dropdownValue, setDropdownValue ] = useState("");
     const menuOptions = [{
         options:[{ label:"Telugu", value:"Telugu" }] 
-  },
-  { 
-    options:[{ label:"Hindi", value:"Hindi" }] 
-  },
-  { 
-    options:[{ label:"Tamil", value:"Tamil" }]
-  },
-  { 
-    options:[{ label:"Kannada", value:"Kannada" }]
-  },
-  { 
-    options:[{ label:"Malayalam", value:"Malayalam" }]
-  }
-]; 
+      },
+      { 
+        options:[{ label:"Hindi", value:"Hindi" }] 
+      },
+      { 
+        options:[{ label:"Tamil", value:"Tamil" }]
+      },
+      { 
+        options:[{ label:"Kannada", value:"Kannada" }]
+      },
+      { 
+        options:[{ label:"Malayalam", value:"Malayalam" }]
+      }]; 
  return (<div style={{ marginBottom:'25px' }}>
+
   <Card padding={15}>
+  <Form name="browseMatrimonyFilter" btnSubmit={{
+                 align:'center',
+                 btnType:'primary',
+                 label:'Search Profiles',
+                 size: 11
+             }}
+             btnReset={{
+                 btnType:'danger',
+                 label:'Reset',
+                 size: 11
+             }}
+             onSubmit={async(form, isValidForm, triggerReset)=>{
+                 // 
+     
+                // triggerReset();
+             }}
+             onReset={async()=>{
+                
+             }}
+             >
     <div style={{ padding: '15px' }}>
         <div>
-            <Choice type="radio" id="numbers" name="numbers" label="I'm looking for" 
+            <Choice type="radio" id="lookingFor" name="lookingFor" label="I'm looking for" 
                     value={[{ id:1, label:"Bride", value:"1"},
                             { id:2, label:"Bridegroom", value:"2" }]} 
                     disabled={false} />
         </div><hr/>
         <div className="mtop15p">
-            <Switch type="checkbox" id="age" name="age" label="Age Preference" 
-                    value={[{ id:1, label:"21 -25", value:"1"},
-                            { id:2, label:"25-30", value:"2" },
-                            { id:3, label:"30-35", value:"3" },
-                            { id:4, label:"35-40", value:"4" },
-                            { id:5, label:"40 + ", value:"5" }]} 
-                    disabled={false} />
+            <DateTimePicker type="datePicker" label="My Date of Birth" id="dateOfBirth" name="dateOfBirth" />
+            <div className="mtop15p">
+              <Range name="ageDifference" label="Age Difference (5 years - 8 years)" start={5} end={8} />
+            </div>
         </div><hr/>
         <div className="mtop15p">
-            <Choice type="radio" id="maritalStatus" name="maritalStatus" label="Marital Status" 
+            <Switch type="checkbox" id="maritalStatus" name="maritalStatus" label="Marital Status" 
                     value={[{ id:1, label:"Unmarried", value:"1"},
                             { id:2, label:"Divorced", value:"2" },
                             { id:3, label:"Widow", value:"3" },
@@ -46,12 +63,12 @@ const FilterMenu = ()=>{
                     disabled={false} />
         </div><hr/>
         <div className="mtop15p">
-            <Dropdown placeholder="Mother Tongue Preference" label="Mother Tongue" 
+            <Dropdown  id="motherTonguePreference" name="motherTonguePreference" placeholder="Mother Tongue Preference" label="Mother Tongue" 
                     searchLabel="Search a Language" menu={menuOptions} 
                     value={dropdownValue} />
         </div><hr/>
         <div className="mtop15p">
-                <Choice type="radio" id="profession" name="profession" label="Profession" 
+                <Switch type="checkbox" id="profession" name="profession" label="Profession" 
                     value={[{ id:1, label:"Private Sector", value:"1"},
                             { id:2, label:"Government officer", value:"2" },
                             { id:3, label:"Software Engineer", value:"3" },
@@ -61,6 +78,7 @@ const FilterMenu = ()=>{
                     disabled={false} />
             </div>
         </div>
+   </Form>
   </Card>
  </div>);
 };

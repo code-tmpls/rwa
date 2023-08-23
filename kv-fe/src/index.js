@@ -1,18 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router } from 'react-router-dom';
-import RootProvider, { AppRouting } from 'e-ui-react';
+import ContextProvider from 'e-ui-react';
+import  { AppRouting } from '@Config/Routing.js';
 import  { Routes } from '@Config/Routing.js';
 import './index.css';
 
 import("react-dom/client").then((ReactDOM)=>{
   ReactDOM.createRoot(document.getElementById("root"))
-   .render(<RootProvider 
-     component={<>
-     <Router>
-        <AppRouting data={Routes} loading={<></>} />
-     </Router>
-     </>} 
-     variables={{}}
-   />);
+   .render(
+    <ContextProvider variables={{ "test":"Hello" }}>
+      <AppRouting />
+   </ContextProvider>);
  });
  

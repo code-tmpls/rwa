@@ -20,6 +20,9 @@ const BrowseMatrimony = ()=>{
           <Col xl={4} xxl={3}>
             <DisplayCard />
           </Col>
+          <Col xl={4} xxl={3}>
+            <DisplayCard />
+          </Col>
         </Row>
       </ContainerFluid>
     </>);
@@ -29,10 +32,10 @@ const BrowseMatrimony = ()=>{
  <Header menulinks={HeaderMenu} activeId="BrowseMatrimony" />
  <ContainerFluid>
   <Row>
-    <Col xl={3} xxl={3}>
+    <Col xl={3} xxl={2}>
       <FilterMenu />
     </Col>
-    <Col xl={9} xxl={9}>
+    <Col xl={9} xxl={10}>
       <DisplayList />
     </Col>
   </Row>

@@ -3,10 +3,7 @@ import { Card, Avatar, Badge, ContainerFluid, Row, Col, Icon } from "e-ui-react"
 
 const DisplayCard = ()=>{
  return (<>
- <Card padding={15}>
-    <div style={{ marginTop:'-3px' }}>
-        <span style={{ backgroundColor:'dodgerBlue', padding:'5px', borderTopLeftRadius:'6px', borderTopRightRadius:'6px' }}>1991 Batch</span>
-    </div>
+ <Card>
     <div style={{ padding:'15px' }}>
         <ContainerFluid>
             <Row>
@@ -21,10 +18,15 @@ const DisplayCard = ()=>{
                       <span style={{ color:'#777' }}><i>Designation</i></span>
                     </div>
                     <div style={{ marginTop:'5px' }}>
-                      <span style={{ color:'#777' }}>
-                        <Icon type="FontAwesome" name="fa-home" />
+                      <span style={{ color:'red' }}>
+                        <Icon type="FontAwesome" name="fa-map-marker" size="14" /> Hyderabad, India
                       </span>
                     </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col xl={12} xxl={12}>
+                  
                 </Col>
             </Row>
         </ContainerFluid>

@@ -17,7 +17,7 @@ const IntroPara2 = ()=>{
         </Col>
     </Row>
     <Row>
-        <Col xl={4} style={{ marginTop:'4%' }}>
+        <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
                 <Icon type="FontAwesome" name="fa-pencil" size="65"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '15px', border:'2px solid #630062', borderRadius:'50%' }}/>
                 <h4 style={{ marginTop:'25px',  color:'#630062' }}><b>Personalized Profile Creation</b></h4>
@@ -28,7 +28,7 @@ const IntroPara2 = ()=>{
             help you highlight your best qualities, increasing your chances of finding a like-minded individual.
             </div>
         </Col>
-        <Col xl={4} style={{ marginTop:'4%' }}>
+        <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
                 <Icon type="FontAwesome" name="fa-search" size="55"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '15px', border:'2px solid #630062', borderRadius:'50%' }}/>
                 <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Advanced Search and Matching</b></h4>
@@ -39,7 +39,7 @@ const IntroPara2 = ()=>{
             matching system will provide you with accurate and relevant results, saving you time and effort.
             </div>
         </Col>
-        <Col xl={4} style={{ marginTop:'4%' }}>
+        <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
                 <Icon type="FontAwesome" name="fa-lock" size="80"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #630062', borderRadius:'50%' }}/>
                 <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Secure Communication</b></h4>
@@ -50,7 +50,7 @@ const IntroPara2 = ()=>{
             each other better, and build a strong foundation for a potential relationship within a secure environment.
             </div>
         </Col>
-        <Col xl={4} style={{ marginTop:'4%' }}>
+        <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
                 <Icon type="FontAwesome" name="fa-check-circle" size="80"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #630062', borderRadius:'50%' }}/>
                 <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Verified Profiles</b></h4>
@@ -61,7 +61,7 @@ const IntroPara2 = ()=>{
             individuals who are genuinely interested in finding a life partner.
             </div>
         </Col>
-        <Col xl={4} style={{ marginTop:'4%' }}>
+        <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
                 <Icon type="FontAwesome" name="fa-life-ring" size="80"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #630062', borderRadius:'50%' }}/>
                 <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Expert Advice and Support</b></h4>
@@ -72,7 +72,7 @@ const IntroPara2 = ()=>{
             complexities of finding love and building a lasting relationship.
             </div>
         </Col>
-        <Col xl={4} style={{ marginTop:'4%' }}>
+        <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
                 <Icon type="FontAwesome" name="fa-users" size="55"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '18.5px', border:'2px solid #630062', borderRadius:'50%' }}/>
                 <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Events and Meetups</b></h4>
