@@ -4,6 +4,19 @@ import { getMatchCalculatorContext } from '@Pages/MatchCalculator/index.js';
 import Kundalini from '@Pages/MatchCalculator/temp-data/kundalini.json';
 import './index.css';
 
+const colorConfig = {
+    "danger": {
+        "bgColor": "#ffe6e5",
+        "borderColor": "#f44336",
+        "color": "#d73c30"
+    }, 
+    "success":{
+        "bgColor": "#dcffdd",
+        "borderColor": "#4caf50",
+        "color": "#2b952f"
+    }
+}
+
 const KundaliniDesc = ()=>{
  const matchCalculatorContext = getMatchCalculatorContext();
 
@@ -26,13 +39,21 @@ const CandidateDetails = ({ title, details })=>{
  </>);
 };
 
- const MatchScore = ()=>{
+ const MatchScore = ({ details })=>{
+    const obtained = details?.obtained;
+    const total = details?.total;
+    const comment = details?.comment;
+    let matchColorConfig = colorConfig?.danger;
+    if(obtained>=18){
+       matchColorConfig = colorConfig?.success;
+    }
     return (<>
         <div align="center" style={{ fontSize:'14px' }}><b>MATCH SCORE</b></div>
-        {/* Green bg- #dcffdd, border-#4caf50, color - #2b952f
-            Red bg - #ffe6e5 border- #f44336, color - #d73c30 */}
-        <div align="center" style={{ marginTop:'15px', fontSize:'22px', padding:'15px', border:'1px solid #4caf50', backgroundColor:'#dcffdd' }}><b>21.5 / 36</b></div>
-        <div align="center" style={{ marginTop:'15px', color: '#4caf50' }}><b>Good to Proceed</b></div>
+        <div align="center" style={{ marginTop:'15px', fontSize:'22px', padding:'15px', 
+            border:'1px solid '+matchColorConfig?.borderColor, backgroundColor: matchColorConfig?.bgColor }}>
+                <b>{obtained} / {total}</b>
+        </div>
+        <div align="center" style={{ marginTop:'15px', color: matchColorConfig?.color }}><b>{comment}</b></div>
     </>);
  };
 
@@ -84,6 +105,7 @@ const CandidateDetails = ({ title, details })=>{
         const total = kundalini?.matchCompatibility?.[kutami]?.score?.total;
         AccordianData.push({
             id: kutami,
+            headingClassName: 'matchCalculator-kundalini-accordian-header',
             title: (<AccordianHeader title={"#"+(index+1)+". "+kutami} score={obtained} total={total} />),
             component:(<Kutami brideName={brideName} bridegroomName={bridegroomName} details={kundalini?.matchCompatibility?.[kutami]} />)
         });
@@ -128,23 +150,13 @@ const CandidateDetails = ({ title, details })=>{
                 <Card padding={15} backgroundColor="#fff6e9" style={{  border:'2px solid #953062' }}>
                     <Row>
                         <Col xl={5} xxl={5}>
-                            <CandidateDetails title="BRIDE DETAILS" 
-                                details ={{
-                                            "Name": "TestName",
-                                            "Zodiac Sign (Raasi)": "TestName",
-                                            "Star (Nakshatram)": "TestName"
-                                        }} />
+                            <CandidateDetails title="BRIDE DETAILS" details ={Kundalini?.bride} />
                         </Col>
                         <Col xl={5} xxl={5}>
-                            <CandidateDetails title="BRIDEGROOM DETAILS"
-                                details ={{
-                                    "Name": "TestName",
-                                    "Zodiac Sign (Raasi)": "TestName",
-                                    "Star (Nakshatram)": "TestName"
-                                 }} />
+                            <CandidateDetails title="BRIDEGROOM DETAILS" details ={Kundalini?.bridegroom} />
                         </Col>
                         <Col xl={2} xxl={2}>
-                            <MatchScore />
+                            <MatchScore details={Kundalini?.matchScore} />
                         </Col>
                     </Row>
                 </Card>
