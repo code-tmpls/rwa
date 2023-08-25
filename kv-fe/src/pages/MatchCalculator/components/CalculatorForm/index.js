@@ -11,7 +11,7 @@ const CalculatorForm = () => {
  const [bNakshatraDetails, setBNakshatraDetails] = useState([]);
  const [bgNakshatraDetails, setBgNakshatraDetails] = useState([]);
     
-  return (<>
+  return (<div style={{ marginBottom:'15px' }}>
         <Card style={{ border: "2px solid #953062" }}>
             <div align="center" style={{ backgroundColor: '#953062', color: '#fff', padding: '8px' }}><b>ASHTAKOOTAMI MATCH CALCULATOR</b></div>
             <div style={{ padding: '15px' }}>
@@ -43,7 +43,6 @@ const CalculatorForm = () => {
                         <Select name="brideRaasi"
                             placeholder="Select your Raasi"
                             options={raasiDetails}
-                            className="navbar-layout"
                             label="Raasi"
                             fontSize="12"
                             onChange={(event) => {
@@ -55,7 +54,6 @@ const CalculatorForm = () => {
                         <Select name="brideNakshatram"
                             placeholder="Select your Star (Nakshatram)"
                             options={bNakshatraDetails}
-                            className="navbar-layout"
                             label="Nakshatram"
                             fontSize="12" />
                     </div>
@@ -67,7 +65,6 @@ const CalculatorForm = () => {
                         <Select  name="brideGroomRaasi"
                             placeholder="Select your Raasi"
                             options={raasiDetails}
-                            className="navbar-layout"
                             label="Raasi"
                             fontSize="12"
                             onChange={(event) => {
@@ -79,7 +76,6 @@ const CalculatorForm = () => {
                         <Select name="brideGroomNakshatram"
                             placeholder="Select your Star (Nakshatram)"
                             options={bgNakshatraDetails}
-                            className="navbar-layout"
                             label="Nakshatram"
                             fontSize="12" />
                     </div>
@@ -87,7 +83,7 @@ const CalculatorForm = () => {
             </div>
 
         </Card>
-    </>);
+    </div>);
 };
 
 export default CalculatorForm;

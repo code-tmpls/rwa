@@ -150,7 +150,7 @@ const CandidateDetails = ({ title, details })=>{
  };
 
  return (<>
- <ContainerFluid>
+ <ContainerFluid style={{ paddingLeft:'0px', paddingRight:'0px' }}>
         <Row>
           <Col xl={12} xxl={12}>
             <div style={{ color:'#953062' }}>
