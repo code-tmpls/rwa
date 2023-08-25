@@ -32,7 +32,7 @@ const CalculatorForm = () => {
                         // triggerReset();
                     }}
                     onReset={async () => {
-
+                        matchCalculatorContext?.setCalculatorFormData({ browseMatrimonyFilter: { } });
                     }}
                 >
                     <div align="center"><h5 className="bs-header"><b>BRIDE</b></h5></div>
@@ -61,10 +61,10 @@ const CalculatorForm = () => {
                     </div>
                     <div align="center" style={{ marginTop: '35px' }} ><h5 className="bs-header"><b>BRIDEGROOM</b></h5></div>
                     <div className="mtop15p">
-                        <TextBox name="bridegroomName" label="Bridegroom Name" placeholder="Enter Bridegroom Name" />
+                        <TextBox name="brideGroomName" label="Bridegroom Name" placeholder="Enter Bridegroom Name" />
                     </div>
                     <div className="mtop15p">
-                        <Select  name="bridegroomRaasi"
+                        <Select  name="brideGroomRaasi"
                             placeholder="Select your Raasi"
                             options={raasiDetails}
                             className="navbar-layout"
@@ -76,7 +76,7 @@ const CalculatorForm = () => {
                         />
                     </div>
                     <div className="mtop15p">
-                        <Select name="bridegroomNakshatram"
+                        <Select name="brideGroomNakshatram"
                             placeholder="Select your Star (Nakshatram)"
                             options={bgNakshatraDetails}
                             className="navbar-layout"

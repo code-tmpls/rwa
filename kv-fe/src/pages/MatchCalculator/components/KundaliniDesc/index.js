@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { ContainerFluid, Row, Col, Card, Accordian  } from "e-ui-react";
 import { getMatchCalculatorContext } from '@Pages/MatchCalculator/index.js';
-import Kundalini from '@Pages/MatchCalculator/temp-data/kundalini.json';
+// import Kundalini from '@Pages/MatchCalculator/temp-data/kundalini.json';
+import { KundaliniCalculator } from '@Pages/MatchCalculator/components/KundaliniDesc/transformer.js';
 import './index.css';
 
 const colorConfig = {
@@ -18,11 +19,23 @@ const colorConfig = {
 }
 
 const KundaliniDesc = ()=>{
+ const [ Kundalini, setKundalini ] = useState({}); 
  const matchCalculatorContext = getMatchCalculatorContext();
 
  useEffect(()=>{
   console.log("calculatorFormData", matchCalculatorContext?.calculatorFormData);
+  let kundalini = {};
+  if(matchCalculatorContext?.calculatorFormData?.browseMatrimonyFilter &&  Object.keys( matchCalculatorContext?.calculatorFormData?.browseMatrimonyFilter )?.length > 0){
+     kundalini = KundaliniCalculator( matchCalculatorContext?.calculatorFormData?.browseMatrimonyFilter );
+  }
+  console.log("kundalini", kundalini);
+  setKundalini( kundalini );
+ 
  },[matchCalculatorContext?.calculatorFormData]);
+
+ useEffect(()=>{
+    console.log("Kundalini", Kundalini);
+ },[Kundalini]);
 
 const CandidateDetails = ({ title, details })=>{    
  return (<>
@@ -32,7 +45,7 @@ const CandidateDetails = ({ title, details })=>{
     <div className="table-responsive">
         <table className="table">
             <tbody style={{ backgroundColor:'#fff' }}>
-            {Object.keys(details).map(key => (<tr key={key}><td><b>{key} :</b></td><td>{details[key]}</td></tr>))}
+            {details && Object.keys(details)?.map(key => (<tr key={key}><td><b>{key} :</b></td><td>{details[key]}</td></tr>))}
             </tbody>
         </table>
     </div>
@@ -80,14 +93,14 @@ const CandidateDetails = ({ title, details })=>{
             </Col>
             <Col xl={3} xxl={4}>
                 <div align="right" style={{ marginTop:'10px', marginBottom:'15px', float: 'right' }}>
-                {Object.keys(details?.result).map(key => (<>
+                {Object.keys(details?.result).map((key, index) => (<div  key={index}>
                     <div style={{ float: 'left', marginRight:'15px' }}><b>{key} :</b></div>
                     <div style={{ float: 'left' }}>
                         <span style={{  padding:'10px', border: '1px solid #ccc', backgroundColor:'#eee' }}>
                             <b>{details?.result?.[key]}</b>
                         </span>
                     </div>
-                </>))}
+                </div>))}
                 </div>
             </Col>
         </Row>
@@ -97,10 +110,12 @@ const CandidateDetails = ({ title, details })=>{
     const AccordianData = [];
     const brideName = kundalini?.bride?.["Name"];
     const bridegroomName = kundalini?.bridegroom?.["Name"];
-    const kutamis = Object.keys( kundalini?.matchCompatibility );
+    const kutamis = kundalini?.matchCompatibility && Object.keys( kundalini?.matchCompatibility );
     const matchScoreObtained = kundalini?.matchScore?.obtained;
     const matchScoreTotal = kundalini?.matchScore?.total;
+    
     kutamis?.map((kutami, index)=>{
+        console.log("kutami", kutami);
         const obtained = kundalini?.matchCompatibility?.[kutami]?.score?.obtained;
         const total = kundalini?.matchCompatibility?.[kutami]?.score?.total;
         AccordianData.push({
@@ -135,7 +150,7 @@ const CandidateDetails = ({ title, details })=>{
  };
 
  return (<>
-    <ContainerFluid>
+ <ContainerFluid>
         <Row>
           <Col xl={12} xxl={12}>
             <div style={{ color:'#953062' }}>
@@ -145,6 +160,8 @@ const CandidateDetails = ({ title, details })=>{
             </div>
           </Col>
         </Row>
+
+        {( Object.keys(Kundalini)?.length>0 )?(
         <Row>
             <Col xl={12} xxl={12}>
                 <Card padding={15} backgroundColor="#fff6e9" style={{  border:'2px solid #953062' }}>
@@ -169,6 +186,15 @@ const CandidateDetails = ({ title, details })=>{
                 
             </Col>
         </Row>
+    ):(
+        <Row>
+          <Col xl={12} xxl={12}>
+            <div align="center" style={{ color:'#aaa' }}>
+                <b>Share the details of Bride and Bridegroom to check Ashtakootami Kundalini Matching Results.</b>
+            </div>
+          </Col>
+        </Row>
+    )}
     </ContainerFluid>
  </>);
 };
