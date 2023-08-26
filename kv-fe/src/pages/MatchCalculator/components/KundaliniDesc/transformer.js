@@ -16,7 +16,7 @@ export const KundaliniCalculator = ( browseMatrimonyFilter )=>{
 
     const brideVarnaPoint = Asthakootami?.varnas?.[brideVarna];
     const brideGroomVarnaPoint = Asthakootami?.varnas?.[brideGroomVarna];
-    const varnaPointObtained = (brideGroomVarnaPoint>brideVarnaPoint)?1:0;
+    const varnaPointObtained = (brideGroomVarnaPoint>=brideVarnaPoint)?1:0;
 
     /* Vashya Kutami */
     const brideVashya = Asthakootami?.nakshatra?.[brideNakshatram]?.vashyaKootami;
