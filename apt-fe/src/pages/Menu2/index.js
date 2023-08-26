@@ -6,8 +6,7 @@ const Menu2 = ()=>{
  
  return (<>
   <Header menulinks={HeaderMenu} activeId="Menu2" />
-  
- </>);
+</>);
 };
 
 export default Menu2;
