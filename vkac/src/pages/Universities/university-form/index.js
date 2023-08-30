@@ -12,12 +12,15 @@ const UniversityForm = ()=>{
             ] 
         }];
         return (<Dropdown name="Country" label="Country" placeholder="Select a Country" 
-            searchLabel="Search a Location" menu={menuOptions} 
+             menu={menuOptions} 
             validation={{
                 required:{
                     value: true,
                     errorMessage:"This is a Mandatory Field"
                 }
+            }}
+            container={{
+                searchLabel: "Search a Location"
             }}
             />);
     };

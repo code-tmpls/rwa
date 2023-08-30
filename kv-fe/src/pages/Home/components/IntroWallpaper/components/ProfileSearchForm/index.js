@@ -26,48 +26,60 @@ const ProfileSearchForm = ()=>{
       
        const MartialStatusField = ()=>{
           return (<Dropdown name="MartialStatus" type="multiple" label="Martial Status" placeholder="Select Martial Status" 
-              searchLabel="Search a Location" menu={StaticProfileForm?.martialStatus} 
+              menu={StaticProfileForm?.martialStatus} 
               validation={{
                   required:{
                       value: true,
                       errorMessage:"This is a Mandatory Field"
                   }
+              }}
+              container={{
+                searchLabel: "Search a Location"
               }}
           />);
        };
       
        const MotherTongueField = ()=>{
           return (<Dropdown name="MotherTongue" type="multiple" label="Mother Tongue" placeholder="Select Mother Tongue" 
-              searchLabel="Search a Mother Tongue" menu={StaticProfileForm?.motherTongue} 
+              menu={StaticProfileForm?.motherTongue} 
               validation={{
                   required:{
                       value: true,
                       errorMessage:"This is a Mandatory Field"
                   }
+              }}
+              container={{
+                searchLabel: "Search a Mother Tongue"
               }}
           />);
        };
       
        const OccupationStatusField = ()=>{
           return (<Dropdown name="OccupationStatus" type="multiple" label="Occupation Status" placeholder="Select Occupation Status" 
-              searchLabel="Search Occupation Status" menu={StaticProfileForm?.occupationStatus} 
+              menu={StaticProfileForm?.occupationStatus} 
               validation={{
                   required:{
                       value: true,
                       errorMessage:"This is a Mandatory Field"
                   }
               }}
+              container={{
+                searchLabel: "Search Occupation Status"
+              }}
           />);
        };
       
        const ProfessionField = ()=>{
           return (<Dropdown name="Profession" type="multiple" label="Profession" placeholder="Select Profession" 
-              searchLabel="Search Profession" menu={StaticProfileForm?.profession} 
+              menu={StaticProfileForm?.profession} 
               validation={{
                   required:{
                       value: true,
                       errorMessage:"This is a Mandatory Field"
                   }
+              }}
+              container={{
+                searchLabel:"Search Profession"
               }}
           />);
        };

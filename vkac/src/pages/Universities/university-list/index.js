@@ -55,7 +55,7 @@ const UniversityList = ()=>{
       
     {countriesList?.length>0 && <Table title={<>
       <Dropdown name="Country" placeholder="Select a Country" width="150px"
-        searchLabel="Search a Location" menu={countriesList} 
+        menu={countriesList} 
         value={country}
         validation={{
             required:{
@@ -63,6 +63,9 @@ const UniversityList = ()=>{
                 errorMessage:"This is a Mandatory Field"
             }
         }} 
+        container={{
+         searchLabel: "Search a Location"
+        }}
         onChange={(result)=>{
          console.log("result [country]", result);
          Load(result?.value);

@@ -65,9 +65,13 @@ const FilterMenu = ()=>{
                     disabled={false} />
         </div><hr style={{ borderBottom:'1px solid #953062', opacity: 1 }}/>
         <div className="mtop15p">
-            <Dropdown  id="motherTonguePreference" name="motherTonguePreference" placeholder="Mother Tongue Preference" label="Mother Tongue" 
-                    searchLabel="Search a Language" menu={menuOptions} 
-                    value={dropdownValue} />
+            <Dropdown id="motherTonguePreference" name="motherTonguePreference" placeholder="Mother Tongue Preference" 
+                label="Mother Tongue" 
+                menu={menuOptions} 
+                value={dropdownValue}
+                container={{
+                  searchLabel:"Search a Language" 
+                }} />
         </div><hr style={{ borderBottom:'1px solid #953062', opacity: 1 }}/>
         <div className="mtop15p">
                 <Switch type="checkbox" id="profession" name="profession" label="Profession" 

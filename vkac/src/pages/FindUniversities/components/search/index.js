@@ -15,7 +15,10 @@ const Search = ()=>{
         <Row>
             <Col xxl={2} xl={1}></Col>
             <Col xxl={1} xl={2} className="mb-3">
-                <Dropdown placeholder="Select Country" searchLabel="Search" menu={menuOptions} />
+                <Dropdown placeholder="Select Country" menu={menuOptions} 
+                container={{
+                    searchLabel: "Search"
+                }} />
             </Col>
             <Col xxl={6} xl={6}>
                 <div className="input-group mb-3">

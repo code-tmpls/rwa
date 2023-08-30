@@ -26,9 +26,18 @@ else if($_GET["action"]=='UNIVERSITIES_FILTER_SCORE' && $_SERVER['REQUEST_METHOD
  $toefl = 0; if( array_key_exists("TOEFL_OverallScore", $htmlData) ){ $toefl = $htmlData["TOEFL_OverallScore"]; }
  $ielts = 0; if( array_key_exists("IELTS_OverallScore", $htmlData) ){ $ielts = $htmlData["IELTS_OverallScore"]; }
  $pte = 0; if( array_key_exists("PTE_OverallScore", $htmlData) ){ $pte = $htmlData["PTE_OverallScore"]; }
- $gpa = 0; if( array_key_exists("BTechDegreeGPA05", $htmlData) ){ $gpa = $htmlData["BTechDegreeGPA05"]; }
+ $btechPercent = 0; if( array_key_exists("BTechDegreePercent", $htmlData) ){ $btechPercent = intval( $htmlData["BTechDegreePercent"] ); }
+ $gpa = 0;
+ if($btechPercent>0){
+    $gpa = ($btechPercent / 100) * 4;
+ }
+ $btechCgpa = 0; if( array_key_exists("BTechDegreeCGPA", $htmlData) ){ $btechCgpa = intval( $htmlData["BTechDegreeCGPA"] ); }
+ if($btechCgpa>0){
+    $gpa = ($btechCgpa / 10) * 4;
+ }
+ $i20Deposit = ''; if( array_key_exists("I20Deposit", $htmlData) ){ $i20Deposit = $htmlData["I20Deposit"]; }
  $gre = 0; if( array_key_exists("GRE_OverallScore", $htmlData) ){ $gre = $htmlData["GRE_OverallScore"]; }
- $query = $universityModule->query_filter_universities($country, $location, $toefl, $ielts, $pte, $gpa, $gre, $duolingo);
+ $query = $universityModule->query_filter_universities($country, $location, $toefl, $ielts, $pte, $gpa, $gre, $duolingo, $i20Deposit);
  echo $database->getJSONData($query);
 }
 

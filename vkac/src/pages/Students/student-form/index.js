@@ -7,7 +7,6 @@ import BTechDegree from './degree/index.js';
 import GREElement from './gre/index.js';
 import DuolingoElement from './duolingo/index.js';
 import I20Deposit from './i20Deposit/index.js';
-import CountriesList from '@TempData/countries.json';
 // import SampleData from '@TempData/student-sample.json';
 import UniversityList from './university-list/index.js';
 
@@ -41,15 +40,40 @@ const StudentForm = ()=>{
  };
 
  const CountryElement = () =>{
-    return (<Dropdown name="Country" label="Country" placeholder="Select a Country" value={SampleData?.country}
-        searchLabel="Search a Location" menu={CountriesList?.country} 
+    const [countriesList, setCountriesList] = useState([]);
+    const LoadCountry = async()=>{
+        const responseData = await UrlAsyncFetch(process.env.NEXUS_URL + process.env.UNIVERSITY_COUNTRIES_URL, 'GET');
+        console.log("responseData", JSON.stringify(responseData));
+        const countries = [{
+              "options": responseData?.map((data)=>{
+                 return { "label": data?.Country, "value": data?.Country };
+              })
+           }];
+        console.log("countries", JSON.stringify(countries));
+        setCountriesList( countries );
+     };
+  
+     useEffect(()=>{
+        console.log("countriesList", countriesList);
+     },[countriesList]);
+     useEffect(()=>{
+        LoadCountry();
+     },[]);
+  
+    return (<>
+    {countriesList?.length>0 && <Dropdown name="Country" label="Country" placeholder="Select a Country"
+        menu={countriesList} container={{
+            searchLabel: "Search a Location",
+            height: '120px'
+        }}
         // validation={{
         //     required:{
         //         value: true,
         //         errorMessage:"This is a Mandatory Field"
         //     }
         // }}
-        />);
+        />}
+    </>);
 };
 
  const EmailElement = ()=>{

@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { TextBox, Card, Row, Col } from "e-ui-react";
+import React, { useState } from "react";
+import { TextBox, Card, Row, Col, getForm } from "e-ui-react";
 // import SampleData from '@TempData/student-sample.json';
 const SampleData = {};
 
 const IELTSElement = ()=>{
+    const formContext = getForm();
+    const country = formContext?.form?.["StudentForm"]?.Country?.value;
+
     const [ieltsScores, setIeltsScores] = useState({
         reading: SampleData?.ielts?.reading || 0,
         writing:  SampleData?.ielts?.writing || 0,
@@ -37,6 +40,7 @@ const IELTSElement = ()=>{
     
     return (<>
      <label className="form-label"><b>IELTS Score :</b></label>
+    {(country?.length>0 && country!=='USA') && <div className="mbot15p">
     <Card padding={15}>
      <Row>
         <Col xxl={3} xl={3}>
@@ -111,8 +115,9 @@ const IELTSElement = ()=>{
         <Col xxl={3} xl={3}><div style={{ padding:'5px' }}><b>Speaking</b></div></Col>
      </Row>
     </Card>
+    </div>}
         
-    <Row className="mtop15p">
+    <Row>
         <Col xxl={6} xl={4}></Col>
         <Col xxl={3} xl={4}>
             <TextBox name="IELTS_OverallScore"
