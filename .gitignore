@@ -7,3 +7,10 @@ apt-fe/dist
 #KV
 kv-fe/node_modules
 kv-fe/dist
+
+
+#VKAC
+vkac/node_modules
+vkac/dist
+vkac/nexus/vendor
+vkac/nexus/logs
