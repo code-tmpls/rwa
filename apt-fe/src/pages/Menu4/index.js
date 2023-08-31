@@ -199,7 +199,10 @@ const Menu4 = ()=>{
                     <TextBox name="emailId" label="Email Id" placeholder="Change your Email Id" />
                     </div>
                     <div className="mtop15p">
-                        <Dropdown placeholder="Select your Country" label="Country" searchLabel="Search country" menu={menuOptions}/>
+                        <Dropdown placeholder="Select your Country" label="Country" menu={menuOptions}
+                        container={{
+                        searchLabel: "Search a Location"
+                        }}/>
                     </div>
                     <div className="mtop15p">
                         <TextBox name="phoneNo" label="Contact Information" placeholder="Change your Phone Number" />  
