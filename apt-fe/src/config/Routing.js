@@ -10,6 +10,10 @@ import Menu5 from "@Pages/Menu5/index.js";
 import Menu6 from "@Pages/Menu6/index.js";
 import Menu7 from "@Pages/Menu7/index.js";
 import Menu8 from "@Pages/Menu8/index.js";
+import Services from "@Pages/Services/index.js";
+import AboutUs from "@Pages/aboutUs/index.js";
+import BlogsArticles from "@Pages/blogsArticles/index.js";
+import ApplicationProcess from "@Pages/applicationProcess/index.js";
 
 export const AppRouting = ()=>{
  return (<BrowserRouter basename="/">
@@ -24,6 +28,10 @@ export const AppRouting = ()=>{
       <Route exact path="/menu6" element={<Menu6 />} />
       <Route exact path="/menu7" element={<Menu7 />} />
       <Route exact path="/menu8" element={<Menu8 />} />
+      <Route exact path="/services" element={<Services />} />
+      <Route exact path="/aboutUs" element={<AboutUs />} />
+      <Route exact path="/blogsArticles" element={<BlogsArticles />} />
+      <Route exact path="/applicationprocess" element={<ApplicationProcess />} />
     </Routes>
  </BrowserRouter>);
 };
