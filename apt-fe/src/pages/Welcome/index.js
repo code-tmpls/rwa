@@ -21,9 +21,9 @@ const Welcome = ()=>{
   return (<>
    <div class="splash-container">
     <div class="splash-content">
-        <img src="./assets/images/logo.png" style={{ width: '100px', height:'auto' }}/>
+        <img src="./assets/images/logo-flat.png" style={{ width: '300px', height:'auto' }}/>
         <div className="mtop15p">
-          <ProgressBar type="danger" progress={progress} height="3" value="" /> 
+          <ProgressBar type="primary" progress={progress} height="3" value="" /> 
           <div className="mtop15p"><b>Loading... {progress}%</b></div>
         </div>
     </div>
