@@ -14,3 +14,9 @@ vkac/node_modules
 vkac/dist
 vkac/nexus/vendor
 vkac/nexus/logs
+
+#VKAC-PT
+vkac-pt/node_modules
+vkac-pt/dist
+vkac-pt/nexus/vendor
+vkac-pt/nexus/logs
