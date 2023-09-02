@@ -1,5 +1,6 @@
 import React from "react";
-import { Card, Avatar, Button, ContainerFluid, Row, Col, Icon, Colors } from "e-ui-react";
+import { Link } from "react-router-dom";
+import { Card, Avatar, Badge, Button, ContainerFluid, Row, Col, Icon, Colors } from "e-ui-react";
 
 const DisplayCard = ({ index })=>{
  const bgColors = ["#fbf4f4", "#eefbef", "#fdefff", "#fff6e9", "#eaf6ff"];
@@ -15,6 +16,7 @@ const DisplayCard = ({ index })=>{
                     </div>
                 </Col>
                 <Col xl={8} xxl={8}>
+                    <div style={{ paddingLeft:'8px' }}>
                     <h5 className="bs-header" style={{ marginTop:'5px' }}>
                         <b>Anup Chakravarthi</b>
                     </h5>
@@ -26,11 +28,36 @@ const DisplayCard = ({ index })=>{
                         <b><i>Working as Software Professional in WIPRO Company, Bangalore.</i></b>
                       </span>
                     </div>
+                    </div>
                 </Col>
             </Row>
             <Row>
+              <Col xl={12} xxl={12}>
+                <div className="mtop15p">
+                  <Link to="#">
+                    <Badge type="primary" label="Domestic Stay" size={11} style={{ marginBottom:'5px', marginRight:'5px' }} />
+                  </Link>
+                  <Link to="#">
+                    <Badge type="primary" label="Domestic Work Permit" size={11} style={{ marginBottom:'5px', marginRight:'5px' }} />
+                  </Link>
+                  <Link to="#">
+                    <Badge type="primary" label="Abroad Stay" size={11} style={{ marginBottom:'5px', marginRight:'5px' }} />
+                  </Link>
+                  <Link to="#">
+                    <Badge type="primary" label="Abroad Work Permit" size={11} style={{ marginBottom:'5px', marginRight:'5px' }}  />
+                  </Link>
+                  <Link to="#">
+                    <Badge type="primary" label="IT Techie Job" size={11} style={{ marginBottom:'5px', marginRight:'5px' }}  />
+                  </Link>
+                  <Link to="#">
+                    <Badge type="primary" label="IT Techie Job" size={11} style={{ marginBottom:'5px', marginRight:'5px' }}  />
+                  </Link>
+                </div>
+              </Col>
+            </Row>
+            <Row>
                 <Col xl={9} xxl={9}>
-                 <div style={{ marginTop:'15px' }}>
+                 <div style={{ marginTop:'10px' }}>
                       <span style={{ color:'#777' }}>
                         <Icon type="FontAwesome" name="fa-map-marker" size="16" style={{ color:'#f71100', marginRight:'5px' }} /> 
                         <b>Living in Hyderabad, India</b>
