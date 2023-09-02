@@ -1,2 +1,5 @@
 export const HeaderMenu = [{ id:'Home', url: 'home', label:'Home' },
-{ id:'Menu', url:'menu', label:'Menu' }];
+{ id:'Services', url:'services', label:'Services' },
+{ id:'AboutUs', url:'aboutUs', label:'About Us' },
+{ id:'BlogsArticles', url:'blogsArticles', label:'Blogs/Articles' },
+{ id:'ApplicationProcess', url:'applicationProcess', label:'Application Process' }];
