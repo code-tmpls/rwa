@@ -3,11 +3,11 @@
 apt-fe/node_modules
 apt-fe/dist
 
-
 #KV
-kv-fe/node_modules
-kv-fe/dist
-
+kv/node_modules
+kv/dist
+kv/nexus/vendor
+kv/nexus/logs
 
 #VKAC
 vkac/node_modules

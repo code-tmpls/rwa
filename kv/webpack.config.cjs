@@ -74,8 +74,25 @@ entry: './src/index.js',
   new CopyWebpackPlugin({
     patterns: [
       {
-        from: 'public/assets',
-        to: 'assets'
+        from:  Path.join(__dirname, 'public/assets'),
+        to: Path.join(__dirname, 'dist/assets'),
+        globOptions: {
+            dot: true
+        }
+      },
+      {
+        from:  Path.join(__dirname, 'public/.htaccess'),
+        to: Path.join(__dirname, 'dist'),
+        globOptions: {
+            dot: true
+        }
+      },
+      {
+        from:  Path.join(__dirname, 'nexus'),
+        to: Path.join(__dirname, 'dist/nexus'),
+        globOptions: {
+            dot: true
+        }
       }
     ]
   })
