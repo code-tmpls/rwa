@@ -64,7 +64,7 @@ const Welcome = ()=>{
     <div class="splash-content">
         <img src="./assets/logo/logo-flat.png" style={{ width: '200px', height:'auto' }}/>
         <div className="mtop15p">
-          <ProgressBar type="info" progress={progress} height="3" value="" /> 
+          <ProgressBar progress={progress} height="3" value="" style={{backgroundColor:"#006EB3"}}/> 
           <div className="mtop15p"><b>Loading... {progress}%</b></div>
         </div>
         <div align="left" className={(showQuotation)?"fade-2s show":"fade-2s"} 

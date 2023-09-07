@@ -1,8 +1,9 @@
 import React from "react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
-import { ContainerFluid, Row, Col, Icon, Carousel, Badge, Card, Colors } from "e-ui-react";
+import { ContainerFluid, Row, Col, Icon, Carousel, Card, Colors } from "e-ui-react";
 import './index.css';
+import Testimonials from "@Pages/Testimonials/index.js";
 
 const Component1 = ()=>{
     return (<div className="section1Component">
@@ -85,45 +86,87 @@ const HeaderContent = ()=>{
     </>);
 };
 
+
+const AboutUsPage = ()=>{
+  return(<>
+  <div className="mtop15p mbot15p">
+          <ContainerFluid>
+          <Card className="intro" padding={15} style={{backgroundColor:"#e0e8ff"}}>
+          <div className="mtop15p mbot15p" align="center">
+            <h2 class="bs-header"><b>About Us</b></h2>
+          </div>
+          <div className="mtop15p mbot15p">
+            <Row>
+              <Col xl={5} xxl={5}>
+                <div className="mtop15p mbot15p">
+                  <img src="./assets/logo/about.jpg" alt="..." />
+                </div>
+              </Col>
+              <Col xl={6} xxl={6}>
+                <div className="mtop15p mbot15p" style={{marginBottom:"10px"}}>
+                  <h4 class="bs-header" style={{color:"black", opacity:".65"}}>
+                  <b>VK Abroad Consultancy</b> not only provides students the Visa Consultancy Services but all the 
+                  exclusive services that the aspiring students need to access to land themselves at their 
+                  choicest universities abroad. VK Abroad Consultancy has that kind of infrastructure. Right
+                  from visa consultancy services to processing student applications, visa and passport to
+                  air-ticketing to admissions in overseas colleges, all we do it in a transparent manner and
+                  at jet speed without wasting your precious time. And mind you, there are no hidden costs or
+                  any hitches of glitches. All we do and function in a transparent manner with utmost honesty
+                  and integrity. After all, trust and confidence go a long way. And so this has been our core
+                  strength and our business philosophy too. Thus VK Abroad Consultancy has earned the reputation
+                  of being the only and the best USA Visa Consultancy Services in Hyderabad.
+                  </h4>
+                  </div>
+                  <div className="mtop15p mbot15p">
+                    <h4 class="bs-header"><b>What gives VK Abroad a Competitive Edge</b></h4>
+                  </div>
+                  <h4 class="bs-header" style={{color:"black", opacity:".65"}}>
+                  This network of resources helps us in giving you the latest info relating to your studies overseas in a 
+                  particular university or college. Any country, any university, any college, or any faculty; just name your choice.
+                  </h4>
+              </Col>
+              <Col xl={1} xxl={1}></Col>
+            </Row>
+            
+          </div>
+        </Card>
+        </ContainerFluid>
+        </div>
+  </>);
+};
+
+
 const Home = ()=>{
  return (<>
  <HeaderContent />
  <Header menulinks={HeaderMenu} activeId="Home" />
- <Carousel data={data} />
- <div style={{height:"80px"}}></div>
- <div className="mbot15p">
-    <div align="center" className="mtop15p mbot15p" style={{height:"100px"}}><Badge type="primary" model="rounded-pill" label="Our Edge" size="20"/></div>
-    <ContainerFluid>
-        <Row>
-            <Col xl={4} xxl={4}>
-                <div className="mto15p" style={{padding:"0 30px"}}>
-                    <Card className="intro" padding={15} style={{height:"250px", 
-                        width:"340px", backgroundColor:"#D2D0D0"}}>
-                        <div align="center" style={{marginTop:"20px"}}><Icon type="FontAwesome" name="fa-book" size={46} style={{color:"dodgerblue"}}/></div>
-                        <div className="mtop15p" align="center" style={{marginTop:"20px"}}><h3>Free Expert Guidance</h3></div>
-                    </Card>
-                </div>
-            </Col>
-            <Col xl={4} xxl={4}>
-            <div className="mto15p" style={{padding:"0 30px"}}>
-                    <Card className="intro" padding={15} style={{height:"250px", 
-                        width:"340px", backgroundColor:"#D2D0D0"}}>
-                        <div align="center" style={{marginTop:"20px"}}><Icon type="FontAwesome" name="fa-pencil" size={46} style={{color:"brown"}}/></div>
-                        <div className="mtop15p" align="center" style={{marginTop:"20px"}}><h3>Identify and Suggest Courses</h3></div>
-                    </Card>
-                </div>
-            </Col>
-            <Col xl={4} xxl={4}>
-            <div className="mto15p" style={{padding:"0 30px"}}>
-                    <Card className="intro" padding={15} style={{height:"250px", 
-                        width:"340px", backgroundColor:"#D2D0D0"}}>
-                        <div align="center" style={{marginTop:"20px"}}><Icon type="FontAwesome" name="fa-check-circle-o" size={46} style={{color:"green"}}/></div>
-                        <div className="mtop15p" align="center" style={{marginTop:"20px"}}><h3>Verify Financials & Visa Processing</h3></div>
-                    </Card>
-                </div>
-            </Col>
-        </Row>
-    </ContainerFluid>
+ <div className="mbot15p"><Carousel data={data} /></div>
+ <div className="mtop15p mbot15p">
+  <ContainerFluid>
+    <Row>
+      <Col xl={1} xxl={1}></Col>
+      <Col xl={10} xxl={10}>
+        <div className="mtop15p mbot15p" align="center">
+            <h1 className="mbot15p" style={{color:"black", fontFamily:"cursive"}}>Clients Reviews</h1>
+        <div className="mtop15p mbot15p">
+          <Testimonials />
+        </div>
+        </div>
+      </Col>
+      <Col xl={1} xxl={1}></Col>
+    </Row>
+  </ContainerFluid>
+ </div>
+ <div className="mtop15p mbot15p">
+  <Row>
+    <Col xl={2} xxl={2}>
+    </Col>
+    <Col xl={8} xxl={8}>
+    <AboutUsPage />
+    </Col>
+    <Col xl={2} xxl={2}>
+    </Col>
+  </Row>
  </div>
  </>);
 };
