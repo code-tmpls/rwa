@@ -4,7 +4,7 @@ import { NavBarTabs } from "e-ui-react";
 const Header = ({ activeId, menulinks })=>{
  return ( <nav className="navbar navbar-expand-sm">
  <div className="container-fluid">
-   <a className="navbar-brand" href="#">
+   <a className="navbar-brand" href="./home">
      <img src="./assets/logo/logo-flat.png" style={{ width: '100px', height:'auto' }}/>
    </a>
    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
@@ -16,13 +16,12 @@ const Header = ({ activeId, menulinks })=>{
        </div>
        <div  className="d-flex">
        <div className="input-group" style={{ marginRight:'5px' }}>
-                   <input type="text" className="form-control " placeholder="Search" />
-                   <button className="btn btn-primary" type="submit">Go</button>
+                   <input type="text" className="form-control " placeholder="Ex. Search Universities in USA" />
+                   <button className="btn" type="submit" style={{backgroundColor:"red", color:"white", opacity:"0.6"}}>Go</button>
        </div>
        </div>
        <div  className="d-flex">
-           <button className="btn btn-warning" type="button" style={{ marginRight:'5px' }}>Get my Quotataion</button>
-           <button className="btn btn-primary" type="button">Login / Signup</button>
+           <button className="btn" type="button" style={{backgroundColor:"slateblue", color:"white", opacity:"0.9"}}>Login / Signup</button>
        </div>
    </div>
  </div>
