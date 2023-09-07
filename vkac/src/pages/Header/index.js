@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavBarTabs } from "e-ui-react";
+import { Nav } from "e-ui-react";
 
 const Header = ({ activeMenu })=>{
  const [ collapseShow, setCollapseShow ] = useState(false);
@@ -14,7 +14,7 @@ const Header = ({ activeMenu })=>{
      <span className="navbar-toggler-icon"></span>
    </button>
    <div className={(collapseShow)?"navbar-collapse collapse":"navbar-collapse collapse show"} id="collapsibleNavbar">
-           <NavBarTabs menulinks={[
+           <Nav menulinks={[
             /* { id:'home', url:'home', label:'Home' },
               { id:'findUniversitiesCourses', url:'find-Universities-Courses', label:'Find Universities & Courses' } 
               { id:'findUniversities', url:'find-Universities', label:'Find Universities & Courses' },*/

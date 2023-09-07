@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBarTabs } from "e-ui-react";
+import { Nav } from "e-ui-react";
 
 const Header = ({ activeId, menulinks })=>{
  return ( <nav className="navbar navbar-expand-sm" style={{ height:'55px' }}>
@@ -14,7 +14,7 @@ const Header = ({ activeId, menulinks })=>{
    </button>
    <div className="collapse navbar-collapse" id="collapsibleNavbar" style={{ marginTop:'-5px'}}>
        <div className="ms-auto">{/* "ms-auto" can move to right */}
-           <NavBarTabs menulinks={menulinks} activeId={activeId} 
+           <Nav menulinks={menulinks} activeId={activeId} 
            colorConfig={{ active: { color:'#630062' },
               default: { color:'#000' }
             }} />
