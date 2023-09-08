@@ -3,7 +3,6 @@ import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
 import { ContainerFluid, Row, Col, Icon, TextBox, Card, Colors, Button, Avatar, TextArea, Accordian } from "e-ui-react";
 
-
 const BlogsExamples = () =>{
     return(<>
     <div className="mtop15p">

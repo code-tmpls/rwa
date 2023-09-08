@@ -1,5 +1,5 @@
 import React from "react";
-import { NavBarTabs } from "e-ui-react";
+import { Nav } from "e-ui-react";
 
 const Header = ({ activeId, menulinks })=>{
  return ( <nav className="navbar navbar-expand-sm">
@@ -12,7 +12,7 @@ const Header = ({ activeId, menulinks })=>{
    </button>
    <div className="collapse navbar-collapse" id="collapsibleNavbar">
        <div className="me-auto">
-           <NavBarTabs menulinks={menulinks} activeId={activeId} />
+           <Nav menulinks={menulinks} activeId={activeId} />
        </div>
        <div  className="d-flex">
        <div className="input-group" style={{ marginRight:'5px' }}>

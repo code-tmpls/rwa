@@ -1,9 +1,34 @@
 import React from "react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
-import { ContainerFluid, Row, Col, Icon, Carousel, Card, Colors } from "e-ui-react";
+import { ContainerFluid, Row, Col, Icon, Carousel, Card, Colors, Rating, Avatar } from "e-ui-react";
 import './index.css';
-import Testimonials from "@Pages/Testimonials/index.js";
+import NewslettersTemplate from "@Pages/NewslettersTemplate/index.js";
+
+const CustomerFeedback = ()=>{
+  return(<>
+  <Card className="intro" padding={15} backgroundColor={Colors.light}>
+    <div className="mtop15p mbot15p" align="center">
+      <Rating name="myRating" size={5} 
+        colors={{
+            default: [ "#ccc" ],
+            onSelect:[{ "1": "hsl(0, 49%, 50%)","2":"#ff0000", "3": "orange", "4": "hsl(109, 61%, 72%)", "5":"green" }]
+        }} />
+        <div className="mtop15p mbot15p">
+        <h5 class="bs-header">"The guidance I received from VK Abroad consultancy in preparing for my study 
+        abroad experience was invaluable. They helped me navigate through the visa application process, ensuring 
+        I had all the necessary documents in order. Their personalized approach made me feel valued and supported
+         throughout my study abroad journey. Thank you for being available and responsive through phone calls and
+          WhatsApp whenever required"</h5>
+        </div>
+        <div className="mtop15p mbot15p" style={{marginBottom:"5px"}}>
+        <Avatar size={100} src="https://i.pinimg.com/280x280_RS/14/c5/25/14c525ed5acff88249193cd22584a6c9.jpg" />
+        </div>
+        <h5 class="bs-header" style={{color:"black", opacity:".65"}}>@AdithyaKankipati</h5>
+    </div>
+  </Card>
+  </>);
+};
 
 const Component1 = ()=>{
     return (<div className="section1Component">
@@ -92,9 +117,6 @@ const AboutUsPage = ()=>{
   <div className="mtop15p mbot15p">
           <ContainerFluid>
           <Card className="intro" padding={15} style={{backgroundColor:"#e0e8ff"}}>
-          <div className="mtop15p mbot15p" align="center">
-            <h2 class="bs-header"><b>About Us</b></h2>
-          </div>
           <div className="mtop15p mbot15p">
             <Row>
               <Col xl={5} xxl={5}>
@@ -144,27 +166,35 @@ const Home = ()=>{
  <div className="mtop15p mbot15p">
   <ContainerFluid>
     <Row>
-      <Col xl={1} xxl={1}></Col>
-      <Col xl={10} xxl={10}>
-        <div className="mtop15p mbot15p" align="center">
-            <h1 className="mbot15p" style={{color:"black", fontFamily:"cursive"}}>Clients Reviews</h1>
-        <div className="mtop15p mbot15p">
-          <Testimonials />
+    <div className="mtop15p mbot15p" align="center">
+          <h2 class="bs-header"><b>Clients Reviews</b></h2>
         </div>
-        </div>
+      <Col xl={4} xxl={4}>
+      <CustomerFeedback/>
       </Col>
-      <Col xl={1} xxl={1}></Col>
+      <Col xl={4} xxl={4}>
+      <CustomerFeedback/>
+      </Col>
+      <Col xl={4} xxl={4}>
+      <CustomerFeedback/>
+      </Col>
     </Row>
   </ContainerFluid>
  </div>
  <div className="mtop15p mbot15p">
   <Row>
-    <Col xl={2} xxl={2}>
+    <Col xl={1} xxl={1}>
     </Col>
-    <Col xl={8} xxl={8}>
-    <AboutUsPage />
+    <Col xl={10} xxl={10}>
+      <div className="mtop15p mbot15p" align="center">
+        <h2 class="bs-header"><b>About Us</b></h2>
+        <AboutUsPage />
+      </div>
+      <div className="mtop15p mbot15p">
+        <NewslettersTemplate />
+      </div>
     </Col>
-    <Col xl={2} xxl={2}>
+    <Col xl={1} xxl={1}>
     </Col>
   </Row>
  </div>
