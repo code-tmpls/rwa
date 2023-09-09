@@ -9,7 +9,7 @@ const NewslettersTemplate = ()=>{
             <Col xl={6} xxl={6}>
             <div className="mtop15p mbot15p">
             <div className="mtop15p mbot15p" align="center">
-            <h2 class="bs-header" style={{marginBottom:"5px"}}><b>Join Our Newsletter</b></h2>
+            <h2 class="bs-header" style={{marginBottom:"5px"}}><b>Join Our <span className="text-primary">Newsletter</span></b></h2>
                 <h4 class="bs-header" style={{ opacity:".65"}}>For more updates, subscribe us:</h4>
             </div>
             <div className="mtop15p mbot15p input-group" align="center">
