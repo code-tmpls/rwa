@@ -2,7 +2,7 @@ import React from "react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
 import { ContainerFluid, Row, Col, Icon, TextBox, Card, Colors, Button, Avatar, TextArea, Accordian } from "e-ui-react";
-
+import NewslettersTemplate from "@Pages/NewslettersTemplate/index.js";
 
 const BlogsExamples = () =>{
     return(<>
@@ -300,6 +300,7 @@ const BlogsExamples = () =>{
     </>);
 };
 
+
 const BlogsTemplates = ()=> {
     return(<>
     <ContainerFluid>
@@ -536,6 +537,17 @@ const BlogsArticles = ()=>{
     <div className="mtop15p">
     <BlogsTemplates />
     </div>
+    <div className="mtop15p">
+    <ContainerFluid>
+    <Row>
+        <Col xl={10} xxl={10}>
+            <div className="mtop15p mbot15p">
+            <NewslettersTemplate />
+            </div>
+        </Col>
+    </Row>
+</ContainerFluid>
+    </div><hr/>
         <BlogsExamples />
     </div>
  </>);
