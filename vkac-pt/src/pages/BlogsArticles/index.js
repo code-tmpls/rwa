@@ -1,7 +1,7 @@
 import React from "react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
-import { ContainerFluid, Row, Col, Icon, TextBox, Card, Colors, Button, Avatar, TextArea, Accordian } from "e-ui-react";
+import { ContainerFluid, Row, Col, Icon, TextBox, Card, Colors, Button, Avatar, TextArea, Accordian, Rating } from "e-ui-react";
 import NewslettersTemplate from "@Pages/NewslettersTemplate/index.js";
 
 const BlogsExamples = () =>{
@@ -194,11 +194,11 @@ const BlogsExamples = () =>{
                                         <div className="mtop15" align="center">
                                             <h3 class="bs-header"><b>Rate this Article</b></h3><hr/>
                                             <div className="mtop15p">
-                                                <Icon type="FontAwesome" name="fa-star-o" size={25} />
-                                                <Icon type="FontAwesome" name="fa-star-o" size={25} />
-                                                <Icon type="FontAwesome" name="fa-star-o" size={25} />
-                                                <Icon type="FontAwesome" name="fa-star-o" size={25} />
-                                                <Icon type="FontAwesome" name="fa-star-o" size={25} />
+                                                <Rating name="myRating" size={5} 
+                                                colors={{
+                                                    default: [ "#ccc" ],
+                                                    onSelect:[{ "1,2": "red", "3": "orange", "4,5": "green" }]
+                                                }} />
                                             </div>
                                             <div className="mtop15p">
                                                 <h4 class="bs-header"><b>Give Feedback</b></h4>
