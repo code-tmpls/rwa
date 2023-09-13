@@ -5,6 +5,7 @@ import { ContainerFluid, Row, Col, Icon, Carousel, Card, Colors, Rating, Avatar 
 import './index.css';
 import NewslettersTemplate from "@Pages/NewslettersTemplate/index.js";
 import ContactUs from "@Pages/ContactUs/index.js";
+import ReachUsOut from "@Pages/ReachUsOut/index.js";
 
 const CustomerFeedback = ()=>{
   return(<>
@@ -29,6 +30,14 @@ const CustomerFeedback = ()=>{
         <h5 class="bs-header" style={{color:"black", opacity:".65"}}>@AdithyaKankipati</h5>
     </div>
   </Card>
+  </>);
+};
+
+const LocateUs = ()=>{
+  return(<>
+  <div className="mtop15p mbot15p" align="center">
+    <h2 class="bs-header" style={{cursor:"pointer", marginBottom:"5px"}}><b>Locate<span className="text-primary"> Us</span></b></h2> 
+  </div>
   </>);
 };
 
@@ -94,17 +103,15 @@ const HeaderContent = ()=>{
                     </Col>
                     <Col xl={7} xxl={7}>
                         <div className="mtop5p mbot5p" align="left">
-                            <Icon type="FontAwesome" name="fa-envelope" size={16} /> info@vkAbroadconsultancy.com
+                            <Icon type="FontAwesome" name="fa-whatsapp" size={16} /> <b>+91-</b> 9948390094
                         </div>
                     </Col>
                     <Col xl={4} xxl={4}>
-                    <div className="mtop5p mbot5p" align="left">
-                        <Icon type="FontAwesome" name="fa-plane" size={20} style={{ marginRight: '10px' }} />
-                        <span style={{ marginRight: '10px' }}><b>USA</b></span>
-                        <span style={{ marginRight: '10px' }}><b>UK</b></span>
-                        <span style={{ marginRight: '10px' }}><b>AUS</b></span>
-                        <span style={{ marginRight: '10px' }}><b>CANADA</b></span>
-                        <span><i>+ Many More</i></span>
+                    <div className="mtop5p mbot5p" align="right">
+                    <span style={{ marginRight: '10px' }}><b>Follow us on</b></span>
+                        <Icon type="FontAwesome" name="fa-instagram" size={20} style={{ marginRight: '10px' }} />
+                        <Icon type="FontAwesome" name="fa-twitter" size={20} style={{ marginRight: '10px' }} />
+                        <Icon type="FontAwesome" name="fa-facebook" size={20} style={{ marginRight: '30px' }} />
                     </div>
                     </Col>
                 </Row>
@@ -118,7 +125,7 @@ const AboutUsPage = ()=>{
   return(<>
   <div className="mtop15p mbot15p">
           <ContainerFluid>
-          <Card className="intro" padding={15} style={{backgroundColor:"#e0e8ff"}}>
+          <Card className="intro" padding={15} style={{backgroundColor:"#d1ffea"}}>
           <div className="mtop15p mbot15p">
             <Row>
               <Col xl={5} xxl={5}>
@@ -285,8 +292,13 @@ const Home = ()=>{
   </Row>
  </div>
  <div className="mtop15p mbot15p">
+  <ReachUsOut />
+ </div>
+ <div className="mtop15p mbot15p">
   <Row>
-    <Col xl={6} xxl={6}></Col>
+    <Col xl={6} xxl={6}>
+      <LocateUs />
+    </Col>
     <Col xl={5} xxl={5}>
       <div className="mtop15p">
         <ContactUs />

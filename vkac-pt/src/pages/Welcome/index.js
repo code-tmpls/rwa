@@ -11,7 +11,7 @@ const Quotations = [
     "title":"Adventure awaits beyond your comfort zone. Discover it with - VK Abroad Consultancy" ,
   },
   {
-    "title":"Invest in yourself. Explore the world. We'll handle the details",
+    "title":"Invest in yourself. Explore the world. We'll handle the details - VK Abroad Consultancy",
   },
   {
     "title":"Good design is making something intelligible and memorable. Great design is making something memorable and meaningful",
@@ -64,7 +64,7 @@ const Welcome = ()=>{
     <div class="splash-content">
         <img src="./assets/logo/logo-flat.png" style={{ width: '200px', height:'auto' }}/>
         <div className="mtop15p">
-          <ProgressBar progress={progress} height="3" value="" style={{backgroundColor:"#006EB3"}}/> 
+          <ProgressBar progress={progress} height="3"/> 
           <div className="mtop15p"><b>Loading... {progress}%</b></div>
         </div>
         <div align="left" className={(showQuotation)?"fade-2s show":"fade-2s"} 

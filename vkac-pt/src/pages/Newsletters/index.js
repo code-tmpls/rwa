@@ -63,8 +63,9 @@ const Newsletters = ()=>{
         <Row>
             <Col xl={3} xxl={3}></Col>
             <Col xl={6} xxl={6}>
-                <div className="mtop15p mbot15p" align="center" style={{ position: 'relative' }}>
+                <div className="mtop15p mbot15p input-group" align="center" style={{ position: 'relative' }}>
                     <TextBox name="surname" placeholder="Search Newsletters based on Topics, Authors, Regions etc..." />
+                    <Button type="primary" label="Search" size={13} />
                 </div>
                 <div className="mtop15p">
                     <Button type="danger" label="Featured" size={11} style={{marginRight:"10px"}} />
@@ -105,7 +106,12 @@ const Newsletters = ()=>{
                 <div className="mtop15p mbot15p" style={{ position: 'relative' }}>
                     <Row>
                         <Col xl={3} xxl={3}></Col>
-                        <Col xl={6} xxl={6}><TextBox name="surname" placeholder="Search Newsletters with the recommendations we suggest below" />
+                        <Col xl={6} xxl={6}>
+                            <div className="mtop15p input-group">
+                                <TextBox name="surname" placeholder="Search Newsletters with the recommendations we suggest below" />
+                                <Button type="danger" label="Search" size={13} />
+                            </div>
+                            
                         <div className="mtop15p">
                             <Card className="intro" padding={15}>
                                 <div className="mtop15p">
