@@ -1,17 +1,8 @@
 import React from "react";
-import { Pill, Colors, Card } from "e-ui-react";
-import MentionProfile from "@Pages/Authentication/NewProfileComponents/MentionProfile/index.js";
+import { Pill, Colors, Card, UrlParam3 } from "e-ui-react";
+import MentionProfile from "@Pages/CreateNewProfile/NewProfileComponents/MentionProfile/index.js";
+import CommunityBackground from "./CommunityBackground/index.js";
 
-   
-   const CommunityBackground = ()=>{
-    return (<>
-     <div>
-       <Card padding={15}>
-        Menu#1 Component
-       </Card>
-     </div>
-    </>);
-   };
    
    const ContactInformation = ()=>{
     return (<>
@@ -63,12 +54,16 @@ import MentionProfile from "@Pages/Authentication/NewProfileComponents/MentionPr
     </>);
    };
 
+  //  const url = UrlParams().baseUrl;
+
 const NewProfileComponents = ()=> {
     return(<>
+   
+
     <Pill mode="vertical" 
         layout={{
-            menu:{ xs:'2', sm:'2', md:'2', lg:'2', xl:'2', xxl:'2' },
-            content:{  xs:'10', sm:'10', md:'10', lg:'10', xl:'10', xxl:'10' }
+            menu:{ xs:'3', sm:'3', md:'3', lg:'3', xl:'3', xxl:'3' },
+            content:{  xs:'9', sm:'9', md:'9', lg:'9', xl:'9', xxl:'9' }
         }}
         menulinks={[
             { id:'MentionProfile', url:'Authentication/#MentionProfile', label:'Mention Profile', content:(<MentionProfile />) },

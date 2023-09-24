@@ -1,13 +1,13 @@
 import React from "react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
-import { ContainerFluid, Row, Col, Alert, Card } from "e-ui-react";
-import NewProfileComponents from "@Pages/Authentication/NewProfileComponents/index.js";
+import { ContainerFluid, Row, Col, Alert } from "e-ui-react";
+import NewProfileComponents from "@Pages/CreateNewProfile/NewProfileComponents/index.js";
 
 
-const Authentication = ()=>{
+const CreateNewProfile = ()=>{
  return (<>
- <Header menulinks={HeaderMenu} activeId="Authentication" />
+ <Header menulinks={HeaderMenu} activeId="CreateNewProfile" />
  <ContainerFluid>
     <div className="mtop15p mbot15p">
         <Row>
@@ -37,4 +37,4 @@ const Authentication = ()=>{
  </>);
 };
 
-export default Authentication;
+export default CreateNewProfile;
