@@ -1,11 +1,24 @@
 import React from "react";
-import { ContainerFluid, Col, Row, Select, TextBox, Button, DateTimePicker } from "e-ui-react";
+import { ProgressBar, ContainerFluid, Col, Row, Select, TextBox, Button, DateTimePicker } from "e-ui-react";
 
 const ProfileDetail2 = ()=>{
+    const Header = ({ title })=>{
+        return (<div className="bs-profile-headers">
+        <ContainerFluid>
+            <Row>
+                <Col xl={8}>{title}</Col>
+                <Col xl={4}>
+                    <div className="mtop5p">
+                        <ProgressBar type="danger" progress="55" height="8" />
+                    </div>
+                </Col>
+            </Row>
+        </ContainerFluid>
+    </div>);
+    };
+
 return(<>
-    <div className="bs-profile-headers mbot15p">
-        2. Birth, Zodiac and Community Background
-    </div>
+    <Header title="2. Birth, Zodiac and Community Background" />
     <div className="bs-profile-contents mtop15p">
         <Row>
             <Col xl={6} xxl={6}>
@@ -67,18 +80,14 @@ return(<>
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
                         <TextBox name="bornLocation" label="Born Location" placeholder="Enter the Location" />
                 </div>
-                <div className="mtop15p mbot15p">
-                    <TextBox name="highestDegree" label="Highest Degree" placeholder="Enter your Highest Degree" />
+                <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
+                        <TextBox name="bornLocality" label="Born Locality" placeholder="Enter the Locality" />
                 </div>
                 <div className="mtop15p mbot15p">
                 <Select
-                    placeholder="Select Living Status"
-                    label="Status"
-                    options={[{ id: 'married', label: 'Married', value: 'Married' },
-                    { id: 'unmarried', label: 'Not Married', value: 'Unmarried' },
-                    { id: 'divorced', label: 'Divorced', value: 'Divorced' },
-                    { id: 'widow', label: 'Widow', value: 'Widow' },
-                    { id: 'widower', label: 'Widower', value: 'Widower' }]}
+                    placeholder="Select Star (Nakshatram)"
+                    label="Star (Nakshatram)"
+                    options={[{ id: 'start', label: 'Star', value: 'Star' }]}
                     className="navbar-layout"
                     width="100%"
                     fontSize="12"
@@ -87,10 +96,14 @@ return(<>
             </Col>
         </Row>
         </div>
-            <div className="mtop15p mbot15p" align="center">
+        <Row>
+            <Col>
+            <div className="mtop15p mbot15p input-group" align="center">
+                <Button type="danger" label="Back" size={11} />
                 <Button type="primary" label="Next" size={11} />
             </div>
-
+            </Col>
+        </Row>
 </>);
 };
 

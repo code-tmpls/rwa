@@ -1,11 +1,25 @@
 import React from "react";
-import { ContainerFluid, Col, Row, Select, TextBox, Button } from "e-ui-react";
+import { ContainerFluid, Col, Row, Select, TextBox, Button, ProgressBar } from "e-ui-react";
 
 const ProfileDetail1 = ()=> {
+
+    const Header = ({ title })=>{
+        return (<div className="bs-profile-headers">
+        <ContainerFluid>
+            <Row>
+                <Col xl={8}>{title}</Col>
+                <Col xl={4}>
+                    <div className="mtop5p">
+                        <ProgressBar type="danger" progress="55" height="8" />
+                    </div>
+                </Col>
+            </Row>
+        </ContainerFluid>
+    </div>);
+    };
+
     return(<>
-    <div className="bs-profile-headers mbot15p">
-        1. Mention Profile
-    </div>
+    <Header title="1. Mention Profile" />
     <div className="bs-profile-contents">
         <Select
             placeholder="Select an option"
@@ -102,7 +116,7 @@ const ProfileDetail1 = ()=> {
                 <div className="mtop15p mbot15p">
                 <Select
                     placeholder="Select Living Status"
-                    label="Status"
+                    label="Living Status"
                     options={[{ id: 'married', label: 'Married', value: 'Married' },
                     { id: 'unmarried', label: 'Not Married', value: 'Unmarried' },
                     { id: 'divorced', label: 'Divorced', value: 'Divorced' },
