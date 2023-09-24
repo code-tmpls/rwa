@@ -36,7 +36,7 @@ const CustomerFeedback = ()=>{
 const LocateUs = ()=>{
   return(<>
   <div className="mtop15p mbot15p" align="center">
-    <h2 class="bs-header" style={{cursor:"pointer", marginBottom:"5px"}}><b>Locate<span className="text-primary"> Us</span></b></h2> 
+    <h2 class="bs-header" style={{marginBottom:"5px"}}><b>Locate<span className="text-primary"> Us</span></b></h2> 
   </div>
   </>);
 };
@@ -109,9 +109,9 @@ const HeaderContent = ()=>{
                     <Col xl={4} xxl={4}>
                     <div className="mtop5p mbot5p" align="right">
                     <span style={{ marginRight: '10px' }}><b>Follow us on</b></span>
-                        <Icon type="FontAwesome" name="fa-instagram" size={20} style={{ marginRight: '10px' }} />
-                        <Icon type="FontAwesome" name="fa-twitter" size={20} style={{ marginRight: '10px' }} />
-                        <Icon type="FontAwesome" name="fa-facebook" size={20} style={{ marginRight: '30px' }} />
+                        <Icon type="FontAwesome" name="fa-instagram" size={20} style={{ marginRight: '10px', cursor:"pointer" }} />
+                        <Icon type="FontAwesome" name="fa-twitter" size={20} style={{ marginRight: '10px', cursor:"pointer" }} />
+                        <Icon type="FontAwesome" name="fa-facebook" size={20} style={{ marginRight: '30px', cursor:"pointer" }} />
                     </div>
                     </Col>
                 </Row>
@@ -279,15 +279,11 @@ const Home = ()=>{
  </div>
  <div className="mtop15p mbot15p">
   <Row>
-    <Col xl={1} xxl={1}>
-    </Col>
-    <Col xl={10} xxl={10}>
+    <Col xl={12} xxl={12}>
       <div className="mtop15p mbot15p" align="center">
         <h2 class="bs-header"><b>About <span className="text-primary">Us</span></b></h2>
         <AboutUsPage />
       </div>
-    </Col>
-    <Col xl={1} xxl={1}>
     </Col>
   </Row>
  </div>
