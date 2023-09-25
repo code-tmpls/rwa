@@ -1,67 +1,26 @@
 import React from "react";
-import { Pill, Colors, Card, UrlParams } from "e-ui-react";
-import MentionProfile from "@Pages/CreateNewProfile/NewProfileComponents/MentionProfile/index.js";
-import CommunityBackground from "./CommunityBackground/index.js";
+import { Pill, Colors, Alert, UrlParams } from "e-ui-react";
+import MentionProfile from "./components/MentionProfile/index.js";
+import CommunityBackground from "./components/CommunityBackground/index.js";
+import ContactInformation from "./components/ContactInformation/index.js";
+import FamilyBackground from "./components/FamilyBackground/index.js";
+import PreferenceOfSpouse from "./components/PreferenceOfSpouse/index.js";
+import UploadPicture from "./components/UploadPicture/index.js";
+import Finish from "./components/Finish/index.js";
+// import NewProfileComponents from "./components/NewProfileComponents/index.js";
+const ProfileCreate = ()=>{
+ const url = UrlParams().baseUrl;
+ return (<>
 
-   
-   const ContactInformation = ()=>{
-    return (<>
-     <div>
-       <Card padding={15}>
-        Menu#2 Component
-       </Card>
-     </div>
-    </>);
-   };
-   
-   const FamilyBackground = ()=>{
-    return (<>
-     <div>
-       <Card padding={15}>
-        Menu#2 Component
-       </Card>
-     </div>
-    </>);
-   };
+ <div className="mbot15p" style={{borderBottom:"2px solid black"}}>
+    <h4 className="bs-header" style={{marginBottom:"5px"}}><b>Create new Profile</b></h4> 
+ </div>
 
-   const PreferenceOfSpouse = ()=>{
-    return (<>
-     <div>
-       <Card padding={15}>
-        Menu#2 Component
-       </Card>
-     </div>
-    </>);
-   };
+ <div className="mtop15p">
+    <Alert type="success" show={true} body={<div>Success! Indicates a successful or positive action</div>} />
+ </div>
 
-   const UploadPicture = ()=>{
-    return (<>
-     <div>
-       <Card padding={15}>
-        Menu#2 Component
-       </Card>
-     </div>
-    </>);
-   };
-
-   const Finish = ()=>{
-    return (<>
-     <div>
-       <Card padding={15}>
-        Menu#2 Component
-       </Card>
-     </div>
-    </>);
-   };
-
-  //  
-const url = UrlParams().baseUrl;
-
-const NewProfileComponents = ()=> {
-
-    return(<>
-   
-    <Pill mode="vertical" 
+ <Pill mode="vertical" 
         layout={{
             menu:{ xs:'3', sm:'3', md:'3', lg:'3', xl:'3', xxl:'3' },
             content:{  xs:'9', sm:'9', md:'9', lg:'9', xl:'9', xxl:'9' }
@@ -79,7 +38,9 @@ const NewProfileComponents = ()=> {
             active: { color: Colors.light, backgroundColor: Colors.primary },
             default: { color: Colors.secondary, backgroundColor: '' }
     }} />
-    </>);
+
+ </>);
 };
 
-export default NewProfileComponents;
+export default ProfileCreate;
+

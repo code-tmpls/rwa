@@ -2,7 +2,7 @@ import React from 'react';
 import { ContainerFluid, Row, Col, Icon } from 'e-ui-react';
 
 const IntroPara2 = ()=>{
- return (<div style={{ marginBottom:'60px', padding:'5%' }}>
+ return (<div style={{ marginBottom:'60px', padding:'3% 5%' }}>
   <ContainerFluid>
     <Row>
         <Col xl={12}>

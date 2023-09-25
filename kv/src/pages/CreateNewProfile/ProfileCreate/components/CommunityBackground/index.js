@@ -1,23 +1,12 @@
 import React from "react";
-import { ProgressBar, ContainerFluid, Col, Row, Select, TextBox, Button, DateTimePicker } from "e-ui-react";
+import Header from "./../../commons/header.js";
+import { Card, ContainerFluid, Col, Row, Select, TextBox, Button, DateTimePicker } from "e-ui-react";
 
-const ProfileDetail2 = ()=>{
-    const Header = ({ title })=>{
-        return (<div className="bs-profile-headers">
-        <ContainerFluid>
-            <Row>
-                <Col xl={8}>{title}</Col>
-                <Col xl={4}>
-                    <div className="mtop5p">
-                        <ProgressBar type="danger" progress="55" height="8" />
-                    </div>
-                </Col>
-            </Row>
-        </ContainerFluid>
-    </div>);
-    };
-
-return(<>
+const CommunityBackground = ()=> {
+    return(<>
+    <ContainerFluid>
+    <div className="bs-profile-table mbot15p">
+    <Card className="intro" padding={15} borderRadius={10}>
     <Header title="2. Birth, Zodiac and Community Background" />
     <div className="bs-profile-contents mtop15p">
         <Row>
@@ -104,7 +93,10 @@ return(<>
             </div>
             </Col>
         </Row>
-</>);
+    </Card>
+    </div>
+    </ContainerFluid>
+    </>);
 };
 
-export default ProfileDetail2;
+export default CommunityBackground;
