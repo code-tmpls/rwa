@@ -8,7 +8,7 @@ const MentionProfile = ()=> {
             <div className="bs-profile-table mbot15p">
             <Card className="intro" padding={15} borderRadius={10}>
             <Header title="1. Mention Profile" />
-    <div className="bs-profile-contents">
+    <div className="bs-profile-contents mtop15p">
         <Select
             placeholder="Select an option"
             label="You are creating Profile for"
@@ -18,7 +18,7 @@ const MentionProfile = ()=> {
             fontSize="12"
         />
     </div>
-    <div className="bs-profile-contents mtop15p">
+    <div className="bs-profile-contents">
         <Row>
             <Col xl={6} xxl={6}>
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
@@ -49,7 +49,7 @@ const MentionProfile = ()=> {
                     fontSize="12"
                 />
                 </div>
-                <div className="mtop15p mbot15p" style={{paddingTop:"32px"}}>
+                <div className="mtop15p mbot15p">
                     <TextBox name="occupation" label="Occupation" placeholder="Enter your Occupation" />
                 </div>
                 <div className="mtop15p mbot15p">
@@ -64,9 +64,15 @@ const MentionProfile = ()=> {
                     <TextBox name="motherTongue" label="Mother Tongue" placeholder="Enter your Mother Tongue" />
                 </div>
                 <div className="mtop15p mbot15p">
-                    <Select
+                    <Row>
+                        <Col xl={12} xxl={12}>
+                            <label className="form-label"><b>Height :</b></label>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xl={6} xxl={6}>
+                        <Select
                         placeholder="Feet"
-                        label="Height"
                         options={[{ id: 'one', label: '1 Feet', value: '1' },
                         { id: 'two', label: '2 Feet', value: '2' },
                         { id: 'three', label: '3 Feet', value: '3' },
@@ -76,9 +82,10 @@ const MentionProfile = ()=> {
                         { id: 'seven', label: '7 Feet', value: '7' },
                         { id: 'eight', label: '8 Feet', value: '8' }
                     ]}
-                        className="navbar-layout"
                         fontSize="12"
                     />
+                        </Col>
+                        <Col xl={6} xxl={6}>
                         <Select
                         placeholder="Inches"
                         options={[{ id: 'one', label: '1 Inches', value: '1' },
@@ -94,9 +101,10 @@ const MentionProfile = ()=> {
                         { id: 'eleven', label: '11 Inches', value: '11' },
                         { id: 'twelve', label: '12 Inches', value: '12' },
                     ]}
-                        className="navbar-layout"
                         fontSize="12"
                     />
+                        </Col>
+                    </Row>
                 </div>
                 <div className="mtop15p mbot15p">
                     <TextBox name="highestDegree" label="Highest Degree" placeholder="Enter your Highest Degree" />
