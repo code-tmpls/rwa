@@ -49,10 +49,10 @@ const CommunityBackground = ()=> {
                         { id: 'taurus', label: 'Taurus (Vrushaba Raasi)', value: 'Taurus' },
                         { id: 'gemini', label: 'Gemini (Midhuna Raasi)', value: 'Gemini' },
                         { id: 'cancer', label: 'Cancer (Karkataka Raasi)', value: 'Cancer' },
-                        { id: 'aries', label: 'Aries (Mesha Raasi)', value: 'Aries' },
-                        { id: 'aries', label: 'Aries (Mesha Raasi)', value: 'Aries' },
-                        { id: 'aries', label: 'Aries (Mesha Raasi)', value: 'Aries' },
-                        { id: 'aries', label: 'Aries (Mesha Raasi)', value: 'Aries' }
+                        { id: 'leo', label: 'Leo (Simha Raasi)', value: 'Leo' },
+                        { id: 'virgo', label: 'Virgo (Kanya Raasi)', value: 'Virgo' },
+                        { id: 'libra', label: 'Libra (Thula Raasi)', value: 'Libra' },
+                        { id: 'scorpio', label: 'Scorpio (Vruschikha Raasi)', value: 'Scorpio' }
                     ]}
                         className="navbar-layout"
                         fontSize="12"
