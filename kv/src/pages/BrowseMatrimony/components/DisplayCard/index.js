@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { Card, Avatar, Badge, Button, ContainerFluid, Row, Col, Icon, Colors } from "e-ui-react";
 
 const DisplayCard = ({ index })=>{
- const bgColors = ["#fbf4f4", "#eefbef", "#fdefff", "#fff6e9", "#eaf6ff"];
+ const bgColors = ["#fbf4f4", "#eefbef", "#fdefff", "#fff6e9", "#eaf6ff"]; //#953062
  return (<div style={{ marginBottom:'15px' }}>
- <Card backgroundColor={bgColors[index]} style={{ border:'2px solid #953062' }}>
+ <Card backgroundColor={bgColors[index]}>
     <div style={{ margin: '15px 5px' }}>
         <ContainerFluid>
             <Row>

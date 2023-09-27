@@ -11,7 +11,7 @@ const CommunityBackground = ()=> {
     <div className="bs-profile-contents mtop15p">
         <Row>
             <Col xl={6} xxl={6}>
-            <div className="mtop15p">
+            <div className="mtop15p mbot15p">
                 <DateTimePicker label="Date and Time of Birth" type="dateTimePicker" id="dateTime" name="dateTime" />
             </div>
             <div className="mtop15p mbot15p">
@@ -86,8 +86,8 @@ const CommunityBackground = ()=> {
         </Row>
         </div>
         <Row>
-            <Col>
-            <div className="mtop15p mbot15p input-group" align="center">
+            <Col align="center">
+            <div className="input-group">
                 <Button type="danger" label="Back" size={11} />
                 <Button type="primary" label="Next" size={11} />
             </div>

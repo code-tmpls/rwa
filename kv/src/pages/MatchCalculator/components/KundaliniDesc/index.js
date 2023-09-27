@@ -150,7 +150,7 @@ const CandidateDetails = ({ title, details })=>{
  };
 
  return (<>
- <ContainerFluid style={{ paddingLeft:'0px', paddingRight:'0px' }}>
+ <ContainerFluid style={{ paddingLeft:'0px' }}>
         <Row>
           <Col xl={12} xxl={12}>
             <div style={{ color:'#953062' }}>
@@ -164,7 +164,7 @@ const CandidateDetails = ({ title, details })=>{
         {( Object.keys(Kundalini)?.length>0 )?(
         <Row>
             <Col xl={12} xxl={12}>
-                <Card padding={15} backgroundColor="#fff6e9" style={{  border:'2px solid #953062' }}>
+                <Card padding={15} backgroundColor="#fff6e9">
                     <Row>
                         <Col xl={5} xxl={5}>
                             <CandidateDetails title="BRIDE DETAILS" details ={Kundalini?.bride} />

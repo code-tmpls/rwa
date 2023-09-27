@@ -11,7 +11,7 @@ const FamilyBackground = ()=>{
     <div className="bs-profile-contents mtop15p">
         <Row>
             <Col xl={6} xxl={6}>
-                <div className="mtop15p mbot15p" style={{marginBottom:"8px", color:"black"}} align="center">
+                <div className="mbot15p" style={{ color:"black" }} align="center">
                         <h5 style={{fontFamily:"fantasy"}}>FATHER DETAILS</h5>
                 </div>
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
@@ -20,7 +20,7 @@ const FamilyBackground = ()=>{
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
                         <TextBox name="fatherOccupation" label="Occupication" placeholder="Enter Occupation" />
                 </div>
-                <div className="mtop15p mbot15p" style={{marginBottom:"8px", color:"black"}} align="center">
+                <div className="mtop25p mbot15p" style={{marginBottom:"8px", color:"black"}} align="center">
                         <h5 style={{fontFamily:"fantasy"}}>SIBLINGS DETAILS</h5>
                 </div>
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
@@ -31,7 +31,7 @@ const FamilyBackground = ()=>{
                 </div>
             </Col>
             <Col xl={6} xxl={6}>
-                <div className="mtop15p mbot15p" style={{marginBottom:"8px", color:"black"}} align="center">
+                <div className="mbot15p" style={{ color:"black" }} align="center">
                         <h5 style={{fontFamily:"fantasy"}}>MOTHER DETAILS</h5>
                 </div>
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>

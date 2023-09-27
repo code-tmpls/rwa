@@ -11,12 +11,12 @@ const ContactInformation = ()=>{
     <div className="bs-profile-contents mtop15p">
         <Row>
             <Col>
-                <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
+                <div className="mbot15p">
                     <TextArea name="address" label="Address" placeholder="Enter your Address" lines={3} />
                 </div>
             </Col>
             <Col xl={6} xxl={6}>
-            <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
+            <div className="mbot15p" style={{marginBottom:"8px"}}>
                         <TextBox name="country" label="Country" placeholder="Enter your Country" />
                 </div>
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
@@ -27,7 +27,7 @@ const ContactInformation = ()=>{
                 </div>
             </Col>
             <Col xl={6} xxl={6}>
-                <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
+                <div className="mbot15p" style={{marginBottom:"8px"}}>
                         <TextBox name="state" label="State" placeholder="Enter your State" />
                 </div>
                 <div className="mtop15p mbot15p" style={{marginBottom:"8px"}}>
