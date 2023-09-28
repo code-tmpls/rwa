@@ -4,6 +4,7 @@ import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
 import FilterMenu from './components/FilterMenu/index.js';
 import DisplayCard from './components/DisplayCard/index.js';
+import MatrimonyList from '@TempData/matrimony-list.json';
 
 const BrowseMatrimony = ()=>{
 
@@ -20,18 +21,11 @@ const BrowseMatrimony = ()=>{
           </Col>
         </Row>
         <Row>
-          <Col xl={4} xxl={3}>
-            <DisplayCard index={1} />
-          </Col>
-          <Col xl={4} xxl={3}>
-            <DisplayCard index={2}  />
-          </Col>
-          <Col xl={4} xxl={3}>
-            <DisplayCard index={3}  />
-          </Col>
-          <Col xl={4} xxl={3}>
-            <DisplayCard index={4}  />
-          </Col>
+          {MatrimonyList?.map((data, index)=>{
+            return (<Col xl={4} xxl={3}>
+              <DisplayCard data={data} index={index} />
+            </Col>);
+          })}
         </Row>
       </ContainerFluid>
     </>);

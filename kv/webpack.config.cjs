@@ -106,6 +106,7 @@ entry: './src/index.js',
         '@Assets': Path.resolve(__dirname, 'public/assets'),
         '@Config': Path.resolve(__dirname, 'src/config'),
         '@Pages': Path.resolve(__dirname, 'src/pages'),
+        '@TempData': Path.resolve(__dirname, 'src/temp-data'),
         '@Templates': Path.resolve(__dirname, 'src/templates'),
         // Needed when library is linked via `npm link` to app
         /** This is implemented when the React Hooks are not working under the library */
