@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ContainerFluid, Row, Col } from "e-ui-react";
+import { ContainerFluid, Row, Col, Alert } from "e-ui-react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
 import FilterMenu from './components/FilterMenu/index.js';
@@ -17,6 +17,9 @@ const BrowseMatrimony = ()=>{
               <h3 className="bs-header" style={{ borderBottom:'2px solid #953062', marginBottom:'15px' }}>
                 <b>Browse Matrimony Profiles</b>
               </h3>
+            </div>
+            <div>
+             <Alert type="warning" show={true} body={<div><b>Note:</b> User photos are visible only to logged-in customers who have created their profiles and are actively searching for a bride or bridegroom.</div>} />
             </div>
           </Col>
         </Row>
