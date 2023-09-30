@@ -5,6 +5,7 @@ import IntroWallpaper from "./components/IntroWallpaper/index.js";
 import IntroPara1 from "./components/IntroPara1/index.js";
 import IntroPara2 from "./components/IntroPara2/index.js";
 import './index.css';
+import Footer from "@Templates/Footer/index.js";
 
 const Home = ()=>{
  const TitleBar = ()=>{
@@ -19,6 +20,7 @@ const Home = ()=>{
  <IntroWallpaper />
  <IntroPara1 />
  <IntroPara2 />
+ <Footer />
  </>);
 };
 
