@@ -14,8 +14,8 @@ const ProfileCreateNew = ()=>{
                 <ProfileCreate />
             </Col>
             <Col xl={3} xxl={3}>
-                <div className="mbot15p" style={{borderBottom:"2px solid black"}}>
-                    <h4 className="bs-header" style={{marginBottom:"5px"}}><b>Your other Profiles</b></h4> 
+                <div className="mtop15p mbot15p" style={{borderBottom:"2px solid #630062"}}>
+                    <h4 className="bs-header" style={{marginBottom:"5px",color:"rgb(149, 48, 98)"}}><b>Your other Profiles</b></h4> 
                 </div>
             </Col>
         </Row>
