@@ -9,7 +9,8 @@
             "profession":"Software Professional",
             "company":"WIPRO",
             "location":"Benguluru"
-        }
+        },
+        "isRequestSent":true
     },{
         "id":2,
         "name":"Salman Khan",
@@ -33,7 +34,8 @@
             "profession":"Software Professional",
             "company":"WIPRO",
             "location":"Benguluru"
-        }
+        },
+        "isRequestSent":true
     },{
         "id":4,
         "name":"Naveen Polishetty",

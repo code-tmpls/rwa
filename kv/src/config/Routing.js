@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "@Pages/Home/index.js";
 import BrowseMatrimony from "@Pages/BrowseMatrimony/index.js";
 import MatchCalculator from "@Pages/MatchCalculator/index.js";
-import CreateNewProfile from "@Pages/CreateNewProfile/index.js";
+import ProfileCreateNew from "@Pages/ProfileCreateNew/index.js";
+import ProfileFullView from "@Pages/ProfileFullView/index.js";
 import Authentication from "@Pages/Authentication/index.js";
 
 export const AppRouting = ()=>{
@@ -13,7 +14,8 @@ export const AppRouting = ()=>{
       <Route exact path="/Home" element={<Home/>} />
       <Route exact path="/BrowseMatrimony" element={<BrowseMatrimony />} />
       <Route exact path="/MatchCalculator" element={<MatchCalculator />} />
-      <Route exact path="/CreateNewProfile" element={<CreateNewProfile />} />
+      <Route exact path="/CreateNewProfile" element={<ProfileCreateNew />} />
+      <Route exact path="/Profile/:profileId" element={<ProfileFullView />} />
       <Route exact path="/Authentication" element={<Authentication />} />
     </Routes>
  </BrowserRouter>);

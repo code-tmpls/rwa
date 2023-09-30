@@ -4,7 +4,7 @@ import { HeaderMenu } from '@Config/HeaderMenu.js';
 import { ContainerFluid, Row, Col } from "e-ui-react";
 import ProfileCreate from "./ProfileCreate/index.js";
 
-const CreateNewProfile = ()=>{
+const ProfileCreateNew = ()=>{
  return (<>
  <Header menulinks={HeaderMenu} activeId="CreateNewProfile" />
  <ContainerFluid>
@@ -24,4 +24,4 @@ const CreateNewProfile = ()=>{
  </>);
 };
 
-export default CreateNewProfile;
+export default ProfileCreateNew;

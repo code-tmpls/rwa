@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Card, Avatar, Badge, Button, ContainerFluid, Row, Col, Icon, Colors } from "e-ui-react";
+import { Card, Avatar, Badge, Button, ContainerFluid, Row, Col, Icon, Colors, UrlParams } from "e-ui-react";
 
 const DisplayCard = ({ data, index })=>{
+ const url = UrlParams().baseUrl;
  const bgColors = ["#fbf4f4", "#eefbef", "#fdefff", "#fff6e9", "#eaf6ff"]; //#953062
  const i = (index>5)?parseInt(index/5):index;
  return (<div style={{ marginBottom:'15px' }}>
@@ -67,16 +68,21 @@ const DisplayCard = ({ data, index })=>{
             <Row>
                 <Col xl={6} xxl={6}>
                   <div align="left" className="mtop10p" style={{ color:'green' }}>
-                    {/*<Button type="success" label="Send Request" size={11} />*/}
-                    <Icon type="FontAwesome" name="fa-check" size="16" style={{ marginTop:'8px', marginRight:'5px' }} /> 
-                    <b>Request Sent</b>
+                    {data?.isRequestSent?(
+                      <>
+                         <Icon type="FontAwesome" name="fa-check" size="16" style={{ marginTop:'8px', marginRight:'5px' }} /> 
+                      <b>Request Sent</b>
+                      </>
+                    ):(<Button type="success" label="Send Request" size={11} />)}
                   </div>
                 </Col>
                 <Col xl={6} xxl={6}>
                   <div align="right" className="mtop10p">
+                    <Link to={url+"Profile/"+data?.id} target="_blank">
                     <Button type="primary" label={<div>
-                      View Full profile
+                      View profile
                     </div>} size={11} />
+                    </Link>
                     </div>
                 </Col>
             </Row>
