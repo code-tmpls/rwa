@@ -12,8 +12,8 @@ const ProfileCreate = ()=>{
  const url = UrlParams().baseUrl;
  return (<>
 
- <div className="mbot15p" style={{borderBottom:"2px solid black"}}>
-    <h4 className="bs-header" style={{marginBottom:"5px"}}><b>Create new Profile</b></h4> 
+ <div className="mtop15p mbot15p" style={{borderBottom:"2px solid #630062"}}>
+    <h4 className="bs-header" style={{marginBottom:"5px", color:"rgb(149, 48, 98)"}}><b>Create new Profile</b></h4> 
  </div>
 
  <div className="mtop15p">
