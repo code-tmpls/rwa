@@ -3,7 +3,8 @@ import { useParams } from 'react-router-dom';
 import { ContainerFluid, Row, Col, Avatar, Icon, Button } from "e-ui-react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
-import BasicDetails from './components/BasicDetails/index.js';
+import Details from './components/Details/index.js';
+import Preferences from './components/Preferences/index.js';
 import './index.css';
 
 const ProfileFullView = ()=>{
@@ -60,48 +61,16 @@ const ProfileFullView = ()=>{
             </Row>
             <Row>
                 <Col xl={12} xxl={12}>
-                    <BasicDetails />
-                    <div style={{ marginTop:'15px', padding:'15px', backgroundColor:'#eee', borderRadius:'8px' }}>
-                        <Row>
-                            <Col xl={6} xxl={6}>
-                            <table  class="table profileFullView" style={{ border:'0px' }}>
-                                <tbody>
-                                    <tr>
-                                        <td><b>Profile created for :</b></td>
-                                        <td>Son</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Height :</b></td>
-                                        <td>5 ft 8 in</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </Col>
-                            <Col xl={6} xxl={6}>
-                            <table  class="table profileFullView" style={{ border:'0px' }}>
-                                <tbody>
-                                    <tr>
-                                        <td><b>Gender :</b></td>
-                                        <td>Male</td>
-                                    </tr>
-                                    <tr>
-                                        <td><b>Age :</b></td>
-                                        <td>31 years</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            </Col>
-                        </Row>
-                    </div>
+                   <Preferences />
                 </Col>
             </Row>
         </Col>
         <Col xl={5} xxl={5}>
-            
+            <Details />
         </Col>
         <Col xl={3} xxl={3}>
             <div className="mtop15p mbot15p" style={{borderBottom:"2px solid black"}}>
-                <h4 className="bs-header" style={{marginBottom:"5px"}}><b>Similar Profiles</b></h4> 
+                <h4 className="bs-header" style={{marginBottom:"5px"}}><b>Other Similar Profiles</b></h4> 
             </div>
         </Col>
     </Row>
