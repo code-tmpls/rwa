@@ -49,6 +49,19 @@ const ProfileFullView = ()=>{
             </Row> 
             <hr/>
             <Row>
+                <Col xl={12} xxl={12}>
+                 <div className="mtop15p" style={{ color:'#777' }}>
+                    <div align="center" className="mbot5p">
+                        <h5 className="bs-header"><b>Interested in getting to know this Profile in better?</b></h5>
+                    </div>
+                    <div align="center">
+                    Feel free to add the profile to your shortlist to express your interest or Send Proposal Request 
+                    to know their interest.
+                    </div>
+                 </div>
+                </Col>
+            </Row>
+            <Row>
                 <Col xl={5} xxl={5}>
                     <div className="mtop15p">
                         <Button type="outline-primary" label="Add to your Shortlist" />
