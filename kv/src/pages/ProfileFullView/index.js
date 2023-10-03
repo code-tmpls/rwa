@@ -19,6 +19,11 @@ const ProfileFullView = ()=>{
                 <Col xl={4} xxl={4}>
                   <div className="mtop15p">
                     <Avatar size={120} src="https://i.pinimg.com/280x280_RS/14/c5/25/14c525ed5acff88249193cd22584a6c9.jpg" />
+                    <div align="center" className="mtop5p">
+                        <Button type="outline-dark" label={<>
+                            <Icon type="FontAwesome" name="fa-photo" size={13} style={{ marginRight:'5px' }}/> View Photos
+                            </>} size={11} />
+                    </div>
                   </div>  
                 </Col>
                 <Col xl={8} xxl={8}>
@@ -42,14 +47,15 @@ const ProfileFullView = ()=>{
                     </div>
                 </Col>
             </Row> 
+            <hr/>
             <Row>
                 <Col xl={5} xxl={5}>
                     <div className="mtop15p">
                         <Button type="outline-primary" label="Add to your Shortlist" />
                     </div>
                 </Col>
-                <Col xl={6} xxl={6}>
-                    <div align="left" className="mtop15p" style={{ color:'green' }}>
+                <Col xl={7} xxl={7}>
+                    <div align="right" className="mtop15p" style={{ color:'green' }}>
                      {data?.isRequestSent?(
                       <>
                          <Icon type="FontAwesome" name="fa-check" size="16" style={{ marginTop:'8px', marginRight:'5px' }} /> 
