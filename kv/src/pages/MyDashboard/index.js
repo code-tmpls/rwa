@@ -21,7 +21,7 @@ const MyDashboard = ()=>{
  }}
  menulinks={[
      { id:'summary', url:url+'MyDashboard#summary', label:'Summary', content:(<Summary />) },
-     { id:'youWatchedList', url:url+'MyDashboard#youWatchedList', label:'You Watched List', content:(<YouWatchedList />) },
+     { id:'youWatchedList', url:url+'MyDashboard#youWatchedList', label:'Your Watched List', content:(<YouWatchedList />) },
      { id:'ourMatchSuggestions', url:url+'MyDashboard#ourMatchSuggestions', label:'Our Match Suggestions', content:(<OurMatchSuggestions />) },
      { id:'peopleWatchedYou', url:url+'MyDashboard#peopleWatchedYou', label:'People Watched You', content:(<PeopleWatchedYou />) }]} 
  activeId="summary" 
