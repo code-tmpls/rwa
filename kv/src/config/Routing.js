@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "@Pages/Home/index.js";
+import MyDashboard from "@Pages/MyDashboard/index.js";
 import BrowseMatrimony from "@Pages/BrowseMatrimony/index.js";
 import MatchCalculator from "@Pages/MatchCalculator/index.js";
 import ProfileCreateNew from "@Pages/ProfileCreateNew/index.js";
@@ -12,6 +13,7 @@ export const AppRouting = ()=>{
     <Routes>
       <Route exact path="/" element={<Home/>} />
       <Route exact path="/Home" element={<Home/>} />
+      <Route exact path="/MyDashboard" element={<MyDashboard />} />
       <Route exact path="/BrowseMatrimony" element={<BrowseMatrimony />} />
       <Route exact path="/MatchCalculator" element={<MatchCalculator />} />
       <Route exact path="/CreateNewProfile" element={<ProfileCreateNew />} />
