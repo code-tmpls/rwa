@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col, Card, Icon, Avatar } from "e-ui-react";
+import Title from '@Templates/Title/index.js';
 
 const preferenceTableData = [{
     "title": "Basic Preferences",
@@ -92,8 +93,8 @@ const Preferences = ()=>{
   </>);
  };
  return (<>
-  <div className="mtop15p mbot15p" style={{borderBottom:"2px solid black"}}>
-    <h4 className="bs-header" style={{marginBottom:"5px"}}><b>Partner Preferences</b></h4> 
+  <div className="mtop15p mbot15p">
+  <Title name="Partner Preferences" />
  </div>
 
  <div className="mtop15p">

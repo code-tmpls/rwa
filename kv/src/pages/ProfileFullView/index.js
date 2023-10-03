@@ -6,6 +6,7 @@ import { HeaderMenu } from '@Config/HeaderMenu.js';
 import Details from './components/Details/index.js';
 import Preferences from './components/Preferences/index.js';
 import './index.css';
+import Title from '@Templates/Title/index.js';
 
 const ProfileFullView = ()=>{
  const { profileId } = useParams();
@@ -88,8 +89,8 @@ const ProfileFullView = ()=>{
             <Details />
         </Col>
         <Col xl={3} xxl={3}>
-            <div className="mtop15p mbot15p" style={{borderBottom:"2px solid black"}}>
-                <h4 className="bs-header" style={{marginBottom:"5px"}}><b>Other Similar Profiles</b></h4> 
+            <div className="mtop15p mbot15p">
+                <Title name="Other Similar Profiles" />
             </div>
         </Col>
     </Row>

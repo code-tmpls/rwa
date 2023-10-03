@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Button } from "e-ui-react";
 import BlurDetails from "@Templates/BlurDetails/index.js";
+import Title from '@Templates/Title/index.js';
 
 const displayDetailsData = [{
     "title" : "Basic Details",
@@ -10,7 +11,7 @@ const displayDetailsData = [{
         "Martial Status" : "Unmarried",
         "Gender" : "Male",
         "Physical Status" : "Normal",
-        "Mother Tongue" : "Telugu, Hindi, English"
+        "Mother Tongue" : "Telugu"
     }
  },
  {
@@ -39,7 +40,7 @@ const displayDetailsData = [{
         "State" : "Telangana",
         "City" : "Hyderabad",
         "Citizenship" : "India",
-        "Work Permit" : "India , USA, Chinba"
+        "Work Permit" : "India , USA, China"
     }
  },
  {
@@ -92,8 +93,8 @@ const Details = ()=>{
  const DisplayDetails = ({ title, data }) =>{
   const k = Object.keys(data); 
   return (<>
-    <div className="mtop15p mbot15p" style={{borderBottom:"2px solid black"}}>
-     <h4 className="bs-header" style={{marginBottom:"5px"}}><b>{title}</b></h4> 
+    <div className="mtop15p mbot15p" style={{borderBottom:"2px solid rgb(149, 48, 98)"}}>
+     <h4 className="bs-header" style={{marginBottom:"5px", color:"rgb(149, 48, 98)"}}><b>{title}</b></h4> 
     </div>
     <div style={{ borderRadius:'8px', backgroundColor:'#eee', padding:'15px' }}>
      {k?.map((dataKey, index)=>{
@@ -113,8 +114,8 @@ const Details = ()=>{
  };
 
  return (<>
-  <div className="mtop15p mbot15p" style={{borderBottom:"2px solid black"}}>
-     <h4 className="bs-header" style={{marginBottom:"5px"}}><b>About Me</b></h4> 
+  <div className="mtop15p mbot15p">
+  <Title name="About Me" />
   </div>
   <div className="mtop15p">
   Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. 
