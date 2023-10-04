@@ -33,7 +33,7 @@ const ProfileCreate = ()=>{
             { id:'PreferenceOfSpouse', url: url+'CreateNewProfile#PreferenceOfSpouse', label:'Preference of Spouse', content:(<PreferenceOfSpouse />) },
             { id:'UploadPicture', url: url+'CreateNewProfile#UploadPicture', label:'Upload Picture', content:(<UploadPicture />) },
             { id:'Finish', url: url+'CreateNewProfile#Finish', label:'Finish', content:(<Finish />) }]} 
-        activeId="CommunityBackground" 
+        activeId="MentionProfile" 
         colorConfig={{
             active: { color: Colors.light, backgroundColor: Colors.primary },
             default: { color: Colors.secondary, backgroundColor: '' }

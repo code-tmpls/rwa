@@ -45,14 +45,18 @@ const CommunityBackground = ()=> {
                     <Select
                         placeholder="Select Raashi (Zodiac-sign)"
                         label="Raasi (Zodiac-sign)"
-                        options={[{ id: 'aries', label: 'Aries (Mesha Raasi)', value: 'Aries' },
-                        { id: 'taurus', label: 'Taurus (Vrushaba Raasi)', value: 'Taurus' },
-                        { id: 'gemini', label: 'Gemini (Midhuna Raasi)', value: 'Gemini' },
-                        { id: 'cancer', label: 'Cancer (Karkataka Raasi)', value: 'Cancer' },
-                        { id: 'leo', label: 'Leo (Simha Raasi)', value: 'Leo' },
-                        { id: 'virgo', label: 'Virgo (Kanya Raasi)', value: 'Virgo' },
-                        { id: 'libra', label: 'Libra (Thula Raasi)', value: 'Libra' },
-                        { id: 'scorpio', label: 'Scorpio (Vruschikha Raasi)', value: 'Scorpio' }
+                        options={[{ id: 'Aries (Mesha Raasi)', label: 'Aries (Mesha Raasi)', value: 'Aries (Mesha Raasi)' },
+                        { id: 'Taurus (Vrushaba Raasi)', label: 'Taurus (Vrushaba Raasi)', value: 'Taurus (Vrushaba Raasi)' },
+                        { id: 'Gemini (Midhuna Raasi)', label: 'Gemini (Midhuna Raasi)', value: 'Gemini (Midhuna Raasi)' },
+                        { id: 'Cancer (Karkataka Raasi)', label: 'Cancer (Karkataka Raasi)', value: 'Cancer (Karkataka Raasi)' },
+                        { id: 'Leo (Simha Raasi)', label: 'Leo (Simha Raasi)', value: 'Leo (Simha Raasi)' },
+                        { id: 'Virgo (Kanya Raasi)', label: 'Virgo (Kanya Raasi)', value: 'Virgo (Kanya Raasi)' },
+                        { id: 'Libra (Thula Raasi)', label: 'Libra (Thula Raasi)', value: 'Libra (Thula Raasi)' },
+                        { id: 'Scorpio (Vruchikha Raasi)', label: 'Scorpio (Vruchikha Raasi)', value: 'Scorpio (Vruchikha Raasi)' },
+                        { id: 'Sagittarius (Dhanur Raasi)', label: 'Sagittarius (Dhanur Raasi)', value: 'Sagittarius (Dhanur Raasi)' },
+                        { id: 'Capricorn (Makara Raasi)', label: 'Capricorn (Makara Raasi)', value: 'Capricorn (Makara Raasi)' },
+                        { id: 'Aquarius (Khumbha Raasi)', label: 'Aquarius (Khumbha Raasi)', value: 'Aquarius (Khumbha Raasi)' },
+                        { id: 'Pisces (Meena Raasi)', label: 'Pisces (Meena Raasi)', value: 'Pisces (Meena Raasi)' }
                     ]}
                         className="navbar-layout"
                         fontSize="12"
@@ -76,7 +80,7 @@ const CommunityBackground = ()=> {
                 <Select
                     placeholder="Select Star (Nakshatram)"
                     label="Star (Nakshatram)"
-                    options={[{ id: 'start', label: 'Star', value: 'Star' }]}
+                    options={[{ id: 'Star', label: 'Star', value: 'Star' }]}
                     className="navbar-layout"
                     width="100%"
                     fontSize="12"

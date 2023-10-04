@@ -12,7 +12,14 @@ const MentionProfile = ()=> {
         <Select
             placeholder="Select an option"
             label="You are creating Profile for"
-            options={[{ id: 'self', label: 'Self', value: 'Self' }]}
+            options={[{ id: 'Self', label: 'Self', value: 'Self' },
+                    { id: 'Son', label: 'Son', value: 'Son' },
+                    { id: 'Daughter', label: 'Daughter', value: 'Daughter' },
+                    { id: 'Sister', label: 'Sister', value: 'Sister' },
+                    { id: 'Brother', label: 'Brother', value: 'Brother' },
+                    { id: 'Niece (Menakodalu)', label: 'Niece (Menakodalu)', value: 'Niece (Menakodalu)' },
+                    { id: 'Nephew (Menakoduku)', label: 'Nephew (Menakoduku)', value: 'Nephew (Menakoduku)' },
+                    { id: 'Others', label: 'Others', value: 'Others' }]}
             className="navbar-layout"
             width="250"
             fontSize="12"
@@ -28,8 +35,8 @@ const MentionProfile = ()=> {
                 <Select
                     placeholder="Select your Gender"
                     label="Gender"
-                    options={[{ id: 'bride', label: 'Women (Bride)', value: 'Women' },
-                    { id: 'brideGroom', label: 'Men (BrideGroom)', value: 'Men' }]}
+                    options={[{ id: 'Women (Bride)', label: 'Women (Bride)', value: 'Women (Bride)' },
+                    { id: 'Men (BrideGroom)', label: 'Men (BrideGroom)', value: 'Men (BrideGroom)' }]}
                     className="navbar-layout"
                     width="100%"
                     fontSize="12"
@@ -39,11 +46,11 @@ const MentionProfile = ()=> {
                 <Select
                     placeholder="Select your Marital Status"
                     label="Status"
-                    options={[{ id: 'married', label: 'Married', value: 'Married' },
-                    { id: 'unmarried', label: 'Not Married', value: 'Unmarried' },
-                    { id: 'divorced', label: 'Divorced', value: 'Divorced' },
-                    { id: 'widow', label: 'Widow', value: 'Widow' },
-                    { id: 'widower', label: 'Widower', value: 'Widower' }]}
+                    options={[{ id: 'Married', label: 'Married', value: 'Married' },
+                    { id: 'Not Married', label: 'Not Married', value: 'Not Married' },
+                    { id: 'Divorced', label: 'Divorced', value: 'Divorced' },
+                    { id: 'Widow', label: 'Widow', value: 'Widow' },
+                    { id: 'Widower', label: 'Widower', value: 'Widower' }]}
                     className="navbar-layout"
                     width="100%"
                     fontSize="12"
@@ -73,14 +80,14 @@ const MentionProfile = ()=> {
                         <Col xl={6} xxl={6}>
                         <Select
                         placeholder="Feet"
-                        options={[{ id: 'one', label: '1 Feet', value: '1' },
-                        { id: 'two', label: '2 Feet', value: '2' },
-                        { id: 'three', label: '3 Feet', value: '3' },
-                        { id: 'four', label: '4 Feet', value: '4' },
-                        { id: 'five', label: '5 Feet', value: '5' },
-                        { id: 'six', label: '6 Feet', value: '6' },
-                        { id: 'seven', label: '7 Feet', value: '7' },
-                        { id: 'eight', label: '8 Feet', value: '8' }
+                        options={[{ id: '1 Feet', label: '1 Feet', value: '1 Feet' },
+                        { id: '2 Feet', label: '2 Feet', value: '2 Feet' },
+                        { id: '3 Feet', label: '3 Feet', value: '3 Feet' },
+                        { id: '4 Feet', label: '4 Feet', value: '4 Feet' },
+                        { id: '5 Feet', label: '5 Feet', value: '5 Feet' },
+                        { id: '6 Feet', label: '6 Feet', value: '6 Feet' },
+                        { id: '7 Feet', label: '7 Feet', value: '7 Feet' },
+                        { id: '8 Feet', label: '8 Feet', value: '8 Feet' }
                     ]}
                         fontSize="12"
                     />
@@ -88,18 +95,18 @@ const MentionProfile = ()=> {
                         <Col xl={6} xxl={6}>
                         <Select
                         placeholder="Inches"
-                        options={[{ id: 'one', label: '1 Inches', value: '1' },
-                        { id: 'two', label: '2 Inches', value: '2' },
-                        { id: 'three', label: '3 Inches', value: '3' },
-                        { id: 'four', label: '4 Inches', value: '4' },
-                        { id: 'five', label: '5 Inches', value: '5' },
-                        { id: 'six', label: '6 Inches', value: '6' },
-                        { id: 'seven', label: '7 Inches', value: '7' },
-                        { id: 'eight', label: '8 Inches', value: '8' },
-                        { id: 'nine', label: '9 Inches', value: '9' },
-                        { id: 'ten', label: '10 Inches', value: '10' },
-                        { id: 'eleven', label: '11 Inches', value: '11' },
-                        { id: 'twelve', label: '12 Inches', value: '12' },
+                        options={[{ id: '1 Inches', label: '1 Inches', value: '1 Inches' },
+                        { id: '2 Inches', label: '2 Inches', value: '2 Inches' },
+                        { id: '3 Inches', label: '3 Inches', value: '3 Inches' },
+                        { id: '4 Inches', label: '4 Inches', value: '4 Inches' },
+                        { id: '5 Inches', label: '5 Inches', value: '5 Inches' },
+                        { id: '6 Inches', label: '6 Inches', value: '6 Inches' },
+                        { id: '7 Inches', label: '7 Inches', value: '7 Inches' },
+                        { id: '8 Inches', label: '8 Inches', value: '8 Inches' },
+                        { id: '9 Inches', label: '9 Inches', value: '9 Inches' },
+                        { id: '10 Inches', label: '10 Inches', value: '10 Inches' },
+                        { id: '11 Inches', label: '11 Inches', value: '11 Inches' },
+                        { id: '12 Inches', label: '12 Inches', value: '12 Inches' },
                     ]}
                         fontSize="12"
                     />
@@ -113,11 +120,8 @@ const MentionProfile = ()=> {
                 <Select
                     placeholder="Select Living Status"
                     label="Living Status"
-                    options={[{ id: 'married', label: 'Married', value: 'Married' },
-                    { id: 'unmarried', label: 'Not Married', value: 'Unmarried' },
-                    { id: 'divorced', label: 'Divorced', value: 'Divorced' },
-                    { id: 'widow', label: 'Widow', value: 'Widow' },
-                    { id: 'widower', label: 'Widower', value: 'Widower' }]}
+                    options={[{ id: 'Living in India', label: 'Living in India', value: 'Living in India' },
+                    { id: 'Living in Abroad', label: 'Living in Abroad', value: 'Living in Abroad' }]}
                     className="navbar-layout"
                     width="100%"
                     fontSize="12"
