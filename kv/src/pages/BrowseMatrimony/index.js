@@ -3,8 +3,7 @@ import { ContainerFluid, Row, Col, Alert } from "e-ui-react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
 import FilterMenu from './components/FilterMenu/index.js';
-import DisplayCard from './components/DisplayCard/index.js';
-import MatrimonyList from '@TempData/matrimony-list.json';
+import ProfileList from '@Templates/ProfileList/index.js';
 
 const BrowseMatrimony = ()=>{
 
@@ -24,11 +23,7 @@ const BrowseMatrimony = ()=>{
           </Col>
         </Row>
         <Row>
-          {MatrimonyList?.map((data, index)=>{
-            return (<Col xl={4} xxl={3}>
-              <DisplayCard data={data} index={index} />
-            </Col>);
-          })}
+         <ProfileList />
         </Row>
       </ContainerFluid>
     </>);
