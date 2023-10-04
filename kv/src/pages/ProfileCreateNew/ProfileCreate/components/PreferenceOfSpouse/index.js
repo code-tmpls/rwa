@@ -18,10 +18,10 @@ const PreferenceOfSpouse = ()=>{
                     <Select
                             placeholder="Select Expected Occupation Type"
                             label="Expected Occupation Type"
-                            options={[{ id: 'private', label: 'Private Employee', value: 'PrivateEmployee' },
-                            { id: 'government', label: 'Government Employee', value: 'GovernmentEmployee' },
-                            { id: 'private', label: 'Private Employee', value: 'PrivateEmployee' },
-                            { id: 'private', label: 'Private Employee', value: 'PrivateEmployee' },]}
+                            options={[{ id: 'Private Employee', label: 'Private Employee', value: 'Private Employee' },
+                            { id: 'Government Employee', label: 'Government Employee', value: 'Government Employee' },
+                            { id: 'Army / Defence', label: 'Army / Defence', value: 'Army / Defence' },
+                            { id: 'Business / Self Employed', label: 'Business / Self Employed', value: 'Business / Self Employed' }]}
                             className="navbar-layout"
                             fontSize="12"
                     />
@@ -30,10 +30,8 @@ const PreferenceOfSpouse = ()=>{
                     <Select
                             placeholder="Select Living Status"
                             label="Expected Living Status"
-                            options={[{ id: 'private', label: 'Private Employee', value: 'PrivateEmployee' },
-                            { id: 'government', label: 'Government Employee', value: 'GovernmentEmployee' },
-                            { id: 'private', label: 'Private Employee', value: 'PrivateEmployee' },
-                            { id: 'private', label: 'Private Employee', value: 'PrivateEmployee' },]}
+                            options={[{ id: 'Living in India', label: 'Living in India', value: 'Living in India' },
+                            { id: 'Living in Abroad', label: 'Living in Abroad', value: 'Living in Abroad' }]}
                             className="navbar-layout"
                             fontSize="12"
                     />
