@@ -63,7 +63,7 @@ const Preferences = ()=>{
                 <thead>
                     <tr style={{ backgroundColor:'#eee', borderBottom:'1px solid #ccc' }}>
                         <td><b>{preferenceData?.title}</b></td>
-                        <td align="right"><b>You Match</b></td>
+                        <td align="right"><b>You Matched</b></td>
                     </tr>
                 </thead>
                 <tbody>

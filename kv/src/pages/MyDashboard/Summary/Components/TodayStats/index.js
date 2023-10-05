@@ -9,23 +9,23 @@ const TodayStats = ()=> {
         </div>
         <div className="mtop15p">
             <span className="bs-header" align="left">New Profile Created</span>
-            <span className="bs-header" align="right" style={{marginLeft:"200px"}}>0</span>
+            <span className="bs-header" align="right" style={{marginLeft:"190px"}}>0</span>
         </div>
         <div className="mtop15p">
             <span className="bs-header" align="left">Profiles watched today</span>
-            <span className="bs-header" align="right" style={{marginLeft:"187px"}}>0</span>
+            <span className="bs-header" align="right" style={{marginLeft:"175px"}}>0</span>
         </div>
         <div className="mtop15p">
             <span className="bs-header" align="left">Your Horoscope matched Profiles</span>
-            <span className="bs-header" align="right" style={{marginLeft:"129px"}}>0</span>
+            <span className="bs-header" align="right" style={{marginLeft:"117px"}}>0</span>
         </div>
         <div className="mtop15p">
             <span className="bs-header" align="left">People watched you</span>
-            <span className="bs-header" align="right" style={{marginLeft:"199px"}}>0</span>
+            <span className="bs-header" align="right" style={{marginLeft:"187px"}}>0</span>
         </div>
         <div className="mtop15p">
             <span className="bs-header" align="left">Points spent</span>
-            <span className="bs-header" align="right" style={{marginLeft:"240px"}}>0</span>
+            <span className="bs-header" align="right" style={{marginLeft:"228px"}}>0</span>
         </div>
     </Card>
     </>);
