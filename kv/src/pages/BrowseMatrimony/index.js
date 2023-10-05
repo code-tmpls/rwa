@@ -22,9 +22,7 @@ const BrowseMatrimony = ()=>{
             </div>
           </Col>
         </Row>
-        <Row>
-         <ProfileList />
-        </Row>
+        <ProfileList partition={{ xl: 4, xxl: 3 }} />
       </ContainerFluid>
     </>);
   };

@@ -17,7 +17,7 @@ const OverallStats = ()=> {
         </div>
         <div className="mtop15p">
             <span className="bs-header" align="left">Your Horoscope matched Profiles</span>
-            <span className="bs-header" align="right" style={{marginLeft:"129px"}}>0</span>
+            <span className="bs-header" align="right" style={{marginLeft:"128px"}}>0</span>
         </div>
         <div className="mtop15p">
             <span className="bs-header" align="left">People watched you</span>
