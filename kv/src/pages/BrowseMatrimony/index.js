@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { ContainerFluid, Row, Col, Alert } from "e-ui-react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
@@ -6,7 +7,8 @@ import FilterMenu from './components/FilterMenu/index.js';
 import ProfileList from '@Templates/ProfileList/index.js';
 
 const BrowseMatrimony = ()=>{
-
+ const location = useLocation();
+ console.log("BrowseMatrimony [LOCATION dATA]: ", location?.state?.data);
   const DisplayList = ()=>{
     return (<>
       <ContainerFluid>
@@ -34,7 +36,7 @@ const BrowseMatrimony = ()=>{
  <ContainerFluid>
   <Row>
     <Col xl={3} xxl={2}>
-      <FilterMenu />
+      <FilterMenu data={location?.state?.data?.browseSearchForm} />
     </Col>
     <Col xl={9} xxl={10}>
       <DisplayList />
