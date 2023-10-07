@@ -1,6 +1,6 @@
 <?php 
 
-function generateHTML($AppName, $logo, $userInfo, $customerName, $dateTime) {
+function generateHTML($ProjectURL, $AppName, $logo, $userInfo, $customerName, $dateTime) {
   // Start buffering the output
   ob_start();
 ?>
@@ -29,7 +29,7 @@ function generateHTML($AppName, $logo, $userInfo, $customerName, $dateTime) {
         your password.<br/><br/>
         Click on the following button to reset your password:<br/>
           <div align="center">
-            <a href="<?php echo "http://localhost:8080/UserModules/Authentication/Template1/ChangePwd/".$userInfo; ?>">
+            <a href="<?php echo $ProjectURL."User/ChangePassword/".$userInfo; ?>">
              <button><b>Reset your Password</b></button>
             </a>
           </div>

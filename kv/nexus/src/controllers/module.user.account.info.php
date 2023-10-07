@@ -117,7 +117,7 @@ else if($_GET["action"]=='SEND_RESETPASSWORD_EMAIL' && $_SERVER['REQUEST_METHOD'
 		if( array_key_exists("template", $htmlData) ){ 
 			$template = $htmlData["template"]; 
 			require_once './../mail-templates/password-change/'.$template.'.php';
-			$body = generateHTML($AppName, $logo, $userInfo, $customerName, getCurrentDateTime($timezone, $DATE_FORMAT));
+			$body = generateHTML($PROJ_URL, $AppName, $logo, $userInfo, $customerName, getCurrentDateTime($timezone, $DATE_FORMAT));
 			$status = sendMail($from,$to,$subject,$body);
 		}
    }
