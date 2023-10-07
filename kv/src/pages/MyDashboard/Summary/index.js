@@ -4,6 +4,7 @@ import { ContainerFluid, Row, Col } from "e-ui-react";
 import Balance from "./Components/Balance/index.js";
 import TodayStats from "./Components/TodayStats/index.js";
 import OverallStats from "./Components/OverallStats/index.js";
+import ProfileList from '@Templates/ProfileList/index.js';
 
 const Summary = ()=>{
  return (<>
@@ -22,6 +23,7 @@ const Summary = ()=>{
     </Row>
    </ContainerFluid>
    <Title name="My Profiles" />
+   <ProfileList partition={{ xl: 4, xxl: 3 }} />
  </>);
 };
 

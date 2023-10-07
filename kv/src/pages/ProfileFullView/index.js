@@ -1,16 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from 'react-router-dom';
-import { ContainerFluid, Row, Col, Avatar, Icon, Button } from "e-ui-react";
+import { ContainerFluid, Row, Col, Avatar, Icon, Button, Modal, Carousel, Card, Colors } from "e-ui-react";
 import Header from '@Templates/Header/index.js';
 import { HeaderMenu } from '@Config/HeaderMenu.js';
 import Details from './components/Details/index.js';
 import Preferences from './components/Preferences/index.js';
 import './index.css';
 import Title from '@Templates/Title/index.js';
+import ProfileList from '@Templates/ProfileList/index.js';
 
 const ProfileFullView = ()=>{
  const { profileId } = useParams();
  const data = {};
+
+ const [ showModel, setShowModal ] = useState(false);
+
+ let info = [<>
+    <img src="https://www.thestatesman.com/wp-content/uploads/2022/09/03_Merged.jpg" class="d-block w-100" alt="..." />
+    <div class="carousel-caption d-none d-md-block">
+      <h5 className="bs-header">First slide label</h5>
+      <p>Some representative placeholder content for the first slide.</p>
+    </div>
+  </>,
+  <img src="https://media.licdn.com/dms/image/C4D03AQHHSwZyheu1UQ/profile-displayphoto-shrink_800_800/0/1662703243613?e=1701907200&v=beta&t=L9q1zTm8i6kni7JT7oUGcW5D8cY5DPHC89BrUkA15so" class="d-block w-100" alt="..." />,
+  <img src="https://indianexpress.com/wp-content/uploads/2023/05/modi-aus-2.jpg?resize=600,334" class="d-block w-100" alt="..." />];
+
+ const HelloWorld = ()=>{
+  return (<div>
+    <Carousel data={info} />
+  </div>);
+ };
+
  return (<>
   <Header menulinks={HeaderMenu} activeId="BrowseMatrimony" />
   <ContainerFluid>
@@ -23,7 +43,9 @@ const ProfileFullView = ()=>{
                     <div align="center" className="mtop5p">
                         <Button type="outline-dark" label={<>
                             <Icon type="FontAwesome" name="fa-photo" size={13} style={{ marginRight:'5px' }}/> View Photos
-                            </>} size={11} />
+                            </>} size={11} onClick={()=>setShowModal(true)} />
+                            <Modal title="Narendra Modi's Photos" show={showModel} onClose={setShowModal} 
+                            content={<HelloWorld />} />
                     </div>
                   </div>  
                 </Col>
@@ -91,6 +113,7 @@ const ProfileFullView = ()=>{
         <Col xl={3} xxl={3}>
             <div className="mtop15p mbot15p">
                 <Title name="Other Similar Profiles" />
+                <ProfileList partition={{ xl: 12, xxl: 12 }} />
             </div>
         </Col>
     </Row>
