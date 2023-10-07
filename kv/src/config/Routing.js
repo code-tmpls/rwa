@@ -18,7 +18,8 @@ export const AppRouting = ()=>{
       <Route exact path="/MatchCalculator" element={<MatchCalculator />} />
       <Route exact path="/CreateNewProfile" element={<ProfileCreateNew />} />
       <Route exact path="/Profile/:profileId" element={<ProfileFullView />} />
-      <Route exact path="/Authentication" element={<Authentication />} />
+      <Route exact path="/User/Authentication" element={<Authentication />} />
+      <Route exact path="/User/ChangePassword/:id" element={<Authentication />} />
     </Routes>
  </BrowserRouter>);
 };

@@ -15,7 +15,7 @@ const Home = ()=>{
  };
 
  return (<>
- <Header menulinks={HeaderMenu} activeId="Home" />
+ <Header menulinks={HeaderMenu()} activeId="Home" />
  <TitleBar />
  <IntroWallpaper />
  <IntroPara1 />

@@ -89,7 +89,8 @@ const Footer = () =>{
         </ContainerFluid>
     </div>
    <div class="kv-footer">
-   &copy;  Copyrights 2021. All Rights are Reserved by ANUPS HT-CLAN (OPC) PRIVATE LIMITED.
+   &copy;  Copyrights 2023. All Rights are Reserved by ANUPS HT-CLAN (OPC) PRIVATE LIMITED.
+   <span className="pull-right" style={{ marginRight:'15px' }}><b>App Version :</b> 1.0.0</span>
 </div>
     </>
     );

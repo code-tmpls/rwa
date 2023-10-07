@@ -6,7 +6,7 @@ import ProfileCreate from "./ProfileCreate/index.js";
 
 const ProfileCreateNew = ()=>{
  return (<>
- <Header menulinks={HeaderMenu} activeId="CreateNewProfile" />
+ <Header menulinks={HeaderMenu()} activeId="CreateNewProfile" />
  <ContainerFluid>
     <div className="mtop15p mbot15p">
         <Row>

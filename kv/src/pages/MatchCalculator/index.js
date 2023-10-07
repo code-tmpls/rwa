@@ -11,7 +11,7 @@ export const getMatchCalculatorContext = () => useContext( MatchCalculatorContex
 const MatchCalculator = ()=>{
  const [calculatorFormData, setCalculatorFormData ] = useState({});
  return (<>
-    <Header menulinks={HeaderMenu} activeId="MatchCalculator" />
+    <Header menulinks={HeaderMenu()} activeId="MatchCalculator" />
     <MatchCalculatorContext.Provider value={{ calculatorFormData, setCalculatorFormData }}>
         <ContainerFluid>
             <Row>

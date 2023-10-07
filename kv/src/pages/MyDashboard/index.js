@@ -10,7 +10,7 @@ import PeopleWatchedYou from './PeopleWatchedYou/index.js';
 const MyDashboard = ()=>{
  const url = UrlParams()?.baseUrl;
  return (<>
-    <Header menulinks={HeaderMenu} activeId="MyDashboard" />
+    <Header menulinks={HeaderMenu()} activeId="MyDashboard" />
     <ContainerFluid>
         <Row>
             <Col xl={12} xxl={12}>

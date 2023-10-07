@@ -32,7 +32,7 @@ const ProfileFullView = ()=>{
  };
 
  return (<>
-  <Header menulinks={HeaderMenu} activeId="BrowseMatrimony" />
+  <Header menulinks={HeaderMenu()} activeId="BrowseMatrimony" />
   <ContainerFluid>
     <Row>
         <Col xl={4} xxl={4}>

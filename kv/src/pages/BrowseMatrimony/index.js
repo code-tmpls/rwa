@@ -30,7 +30,7 @@ const BrowseMatrimony = ()=>{
   };
 
  return (<>
- <Header menulinks={HeaderMenu} activeId="BrowseMatrimony" />
+ <Header menulinks={HeaderMenu()} activeId="BrowseMatrimony" />
  <ContainerFluid>
   <Row>
     <Col xl={3} xxl={2}>
