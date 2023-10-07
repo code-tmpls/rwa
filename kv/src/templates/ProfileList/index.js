@@ -7,7 +7,7 @@ const ProfileList = ({ partition }) =>{
  return (<>
  <Row>
  {MatrimonyList?.map((data, index)=>{
-  return (<Col xl={partition?.xl} xxl={partition?.xl}>
+  return (<Col xl={partition?.xl} xxl={partition?.xxl}>
     <DisplayCard data={data} index={index} />
   </Col>);
  })}
