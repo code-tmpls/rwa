@@ -3,8 +3,7 @@ import { ContainerFluid, Row, Col } from "e-ui-react";
 
 const IntroPara = ()=>{
  return (<>
- <ContainerFluid style={{ fontFamily:'Roboto,Helvetica Neue,Helvetica,Arial,sans-serif',
-  backgroundColor:'#e9a349', color:'#fff', padding:'45px', paddingRight: '50px' }}>
+ <ContainerFluid className="bg-warning" style={{ fontFamily:'Roboto,Helvetica Neue,Helvetica,Arial,sans-serif', color:'black', padding:'45px', paddingRight: '50px' }}>
     <Row>
         <Col xl={12} xxl={12}>
             <div align="center" style={{ fontSize:'22px' }}>
