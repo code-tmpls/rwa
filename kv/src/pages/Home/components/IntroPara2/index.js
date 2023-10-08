@@ -19,8 +19,8 @@ const IntroPara2 = ()=>{
     <Row>
         <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
-                <Icon type="FontAwesome" name="fa-pencil" size="65"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '15px', border:'2px solid #630062', borderRadius:'50%' }}/>
-                <h4 style={{ marginTop:'25px',  color:'#630062' }}><b>Personalized Profile Creation</b></h4>
+                <Icon type="FontAwesome" name="fa-pencil" size="65"  style={{ color:'#236969', width:'100px', height:'100px', paddingTop: '15px', border:'2px solid #236969', borderRadius:'50%' }}/>
+                <h4 style={{ marginTop:'25px',  color:'#236969' }}><b>Personalized Profile Creation</b></h4>
             </div>
             <div align="center" style={{ fontSize:'18px', marginTop:'15px' }}>
             We believe that a well-crafted profile is the key to attracting compatible partners. Our intuitive profile creation 
@@ -30,8 +30,8 @@ const IntroPara2 = ()=>{
         </Col>
         <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
-                <Icon type="FontAwesome" name="fa-search" size="55"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '15px', border:'2px solid #630062', borderRadius:'50%' }}/>
-                <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Advanced Search and Matching</b></h4>
+                <Icon type="FontAwesome" name="fa-search" size="55"  style={{ color:'#d72324', width:'100px', height:'100px', paddingTop: '15px', border:'2px solid #d72324', borderRadius:'50%' }}/>
+                <h4 style={{ marginTop:'25px', color:'#d72324' }}><b>Advanced Search and Matching</b></h4>
             </div>
             <div align="center" style={{ fontSize:'18px', marginTop:'15px' }}>
             Our advanced search and matching algorithms empower you to refine your search and find potential partners who align 
@@ -41,8 +41,8 @@ const IntroPara2 = ()=>{
         </Col>
         <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
-                <Icon type="FontAwesome" name="fa-lock" size="80"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #630062', borderRadius:'50%' }}/>
-                <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Secure Communication</b></h4>
+                <Icon type="FontAwesome" name="fa-lock" size="80"  style={{ color:'#472ff7', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #472ff7', borderRadius:'50%' }}/>
+                <h4 style={{ marginTop:'25px', color:'#472ff7' }}><b>Secure Communication</b></h4>
             </div>
             <div align="center" style={{ fontSize:'18px', marginTop:'15px' }}>
             We prioritize your safety and privacy. Our secure messaging system enables you to connect with other members while 
@@ -52,8 +52,8 @@ const IntroPara2 = ()=>{
         </Col>
         <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
-                <Icon type="FontAwesome" name="fa-check-circle" size="80"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #630062', borderRadius:'50%' }}/>
-                <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Verified Profiles</b></h4>
+                <Icon type="FontAwesome" name="fa-check-circle" size="80"  style={{ color:'#571b97', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #571b97', borderRadius:'50%' }}/>
+                <h4 style={{ marginTop:'25px', color:'#571b97' }}><b>Verified Profiles</b></h4>
             </div>
             <div align="center" style={{ fontSize:'18px', marginTop:'15px' }}>
             We understand the importance of trust when it comes to online matchmaking. To maintain the authenticity of our 
@@ -63,8 +63,8 @@ const IntroPara2 = ()=>{
         </Col>
         <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
-                <Icon type="FontAwesome" name="fa-life-ring" size="80"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #630062', borderRadius:'50%' }}/>
-                <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Expert Advice and Support</b></h4>
+                <Icon type="FontAwesome" name="fa-life-ring" size="80"  style={{ color:'#c24d2c', width:'100px', height:'100px', paddingTop: '6px', border:'2px solid #c24d2c', borderRadius:'50%' }}/>
+                <h4 style={{ marginTop:'25px', color:'#c24d2c' }}><b>Expert Advice and Support</b></h4>
             </div>
             <div align="center" style={{ fontSize:'18px', marginTop:'15px' }}>
             Our team of relationship experts is here to guide you throughout your journey. From providing dating tips and 
@@ -74,8 +74,8 @@ const IntroPara2 = ()=>{
         </Col>
         <Col xxl={4} xl={4} style={{ marginTop:'4%' }}>
             <div align="center">
-                <Icon type="FontAwesome" name="fa-users" size="55"  style={{ color:'#630062', width:'100px', height:'100px', paddingTop: '18.5px', border:'2px solid #630062', borderRadius:'50%' }}/>
-                <h4 style={{ marginTop:'25px', color:'#630062' }}><b>Events and Meetups</b></h4>
+                <Icon type="FontAwesome" name="fa-users" size="55"  style={{ color:'#e3174b', width:'100px', height:'100px', paddingTop: '18.5px', border:'2px solid #e3174b', borderRadius:'50%' }}/>
+                <h4 style={{ marginTop:'25px', color:'#e3174b' }}><b>Events and Meetups</b></h4>
             </div>
             <div align="center" style={{ fontSize:'18px', marginTop:'15px' }}>
             We believe in the power of real-life connections. Our platform offers a range of events and meetups where you 
