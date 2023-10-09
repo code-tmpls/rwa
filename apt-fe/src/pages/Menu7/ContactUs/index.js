@@ -5,9 +5,10 @@ const Component1 = () => {
 return(<>
 <ContainerFluid>
     <Row>
-        <Col xl={4} xxl={4}>
+        <Col xl={5} xxl={5}>
+        <div style={{paddingTop:"100px"}}>
             <div className="mtop15p mbot15p">
-            <Card className="intro" padding={15} borderRadius={10} backgroundColor={Colors.light}>
+            <Card className="intro" padding={10} borderRadius={10} backgroundColor={Colors.light}>
                 <div className="input-group">
                 <Icon type="FontAwesome" name="fa-phone" size={20} />
                 <p style={{marginLeft:"5px"}}>+91 - 9052344403</p>
@@ -17,21 +18,22 @@ return(<>
             <div className="mtop15p mbot15p">
             <Card className="intro" padding={15} borderRadius={10} backgroundColor={Colors.light}>
                 <div className="input-group">
-                <Icon type="FontAwesome" name="fa-envelope-o" size={20} />
-                <p style={{marginLeft:"5px"}}>naveenkanvasa@gmail.com</p>
+                <Icon type="FontAwesome" name="fa-envelope-o" size={18} />
+                <span style={{marginLeft:"5px"}}>naveenkanvasa@gmail.com</span>
                 </div>
             </Card>
             </div>
             <div className="mtop15p mbot15p">
-            <Card className="intro" padding={15} borderRadius={10} backgroundColor={Colors.light}>
+            <Card className="intro" padding={10} borderRadius={10} backgroundColor={Colors.light}>
                 <div className="input-group">
                 <Icon type="FontAwesome" name="fa-map-marker" size={20} />
                 <p style={{marginLeft:"5px"}}>Hyderabad, India</p>
                 </div>
             </Card>
             </div>
+        </div>
         </Col>
-        <Col xl={8} xxl={8}>
+        <Col xl={7} xxl={7}>
             <div className="mtop15p mbot15p">
                 <Card className="intro" padding={15} borderRadius={10} backgroundColor={Colors.light}>
                     <div>

@@ -7,7 +7,6 @@ import ContactUs from "./contactUs/index.js";
 const Menu7 = ()=>{
  return (<>
   <Header menulinks={HeaderMenu} activeId="Menu7" />
-<ContainerFluid>
     <Row>
         <div>
             <Menu type="pill" list={[{ id:"home", label:"Contact Us", component:(<div><ContactUs /></div>) },
@@ -15,7 +14,6 @@ const Menu7 = ()=>{
             { id:"menu2", label:"Menu 2", component:(<div>Menu #2 Content</div>) }]} />
         </div>
     </Row>
-</ContainerFluid>
  </>);
 };
 
