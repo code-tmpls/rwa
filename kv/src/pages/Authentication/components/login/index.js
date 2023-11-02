@@ -88,6 +88,7 @@ const Login = ({ setShowForgotPwd })=>{
                         expire: currentDate,
                         data: JSON.stringify(response)
                     }));
+                    console.log("Stored in sessionStorage:", sessionStorage.getItem("USER_LOGIN"));
                     window.location.href=process.env.PROJECT_URL+'MyDashboard';
             } else {
                 setAlertMessage("We recognized the Account Password was not matched with associated Email Address. Please verify and try again.");

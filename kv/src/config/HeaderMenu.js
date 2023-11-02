@@ -9,6 +9,7 @@ export const HeaderMenu = ()=>{
  { id:'MatchCalculator', url:url+'MatchCalculator', label:'Match Calculator' },
  { id:'Authentication', url:url+'User/Authentication', label:'SignUp / Login' }];
  const login = sessionStorage.getItem("USER_LOGIN");
+ console.log("login", login);
  if(login!==null){
     const loginData = JSON.parse(login);
     if (new Date().getTime() < new Date(loginData.expire).getTime()){ // Check Expiry Time
