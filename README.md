@@ -5,4 +5,5 @@ For Development Mode
 3) npm start
 
 For Production Mode
-1) npm run build and copy "dist" to Server.
+1) npm run build (creates "dist" folder).
+2) npm run deploy (copies "dist" conent into release branch)

@@ -31,7 +31,7 @@ export const HeaderMenu = ()=>{
    </li>
    <li onClick={()=>{
         sessionStorage.removeItem("USER_LOGIN");
-        window.location.href=process.env.PROJECT_URL;
+        if(sessionStorage.getItem("USER_LOGIN")===null){ window.location.href=process.env.PROJECT_URL; }
     }}><a className="dropdown-item" href="#">
     <Icon type="FontAwesome" name="fa-sign-out" size={18} style={{ marginRight:'10px' }} />
     <b>Signout</b>
