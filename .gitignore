@@ -9,6 +9,10 @@ kv/dist
 kv/nexus/vendor
 kv/nexus/logs
 
+#YP
+yp/node_modules
+yp/nexus/logs
+
 #VKAC
 vkac/node_modules
 vkac/dist
