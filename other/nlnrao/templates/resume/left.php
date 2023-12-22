@@ -1,6 +1,6 @@
 <div>
  <button type="button" class="btn btn-outline-light btn-sm f12" onclick="javascript:resume('close');">
-  <i class="fa fa-arrow-left" aria-hidden="true"></i> <span class="mleft5p">Go Back</span>
+  <i class="fa fa-arrow-left" aria-hidden="true"></i> <span class="mleft5p"><b>Go Back</b></span>
  </button>
 </div>
 <div align="center" class="pt-3">
@@ -26,7 +26,7 @@
 		</div>
 		<div class="mt-2">
 			<button type="button" class="btn btn-outline-warning btn-sm f12">
-				<i class="fa fa-download" aria-hidden="true"></i> <span class="mleft5p"><b>Download My Resume</b></span>
+				<i class="fa fa-download" aria-hidden="true"></i> <span class="mLeft5p"><b>Download My Resume</b></span>
 			</button>
 		</div>
 		<div class="mt-2">
@@ -38,7 +38,7 @@
 		</div>
 		<hr/>
 		<div>
-		Over <span class="grey-1">10+ years</span> of dynamic experience in software development, with a proven track record of successful project contributions across 
+		Over <span class="grey-1">11 years</span> of dynamic experience in software development, with a proven track record of successful project contributions across 
 		Telecom, Transportation, E-Commerce, Health, Banking, Automobile and Insurance industries.
 		</div>
 		<div class="mt-2 resume-socialMedia">
@@ -54,5 +54,15 @@
 			</div>
 		</div>
 		<hr/>
+		<div>
+			<div align="center" class="resume-header-sub1 pt-1 pb-1 mb-3" style="background-color:#ebb5b1;"><b>PROJECTS WORKED (View by Industry)</b></div><hr/>
+			<div align="left">
+				<div class="mb-1"><b>1. TELECOMMUNICATION INDUSTRY</b></div>
+				<ol type="a">
+					<li><div class="pt-1 pb-1"><b>CCBU Web Portal <span class="badge bg-success pull-right">PROJECT</span></b></div></li>
+					<li><div class="pt-1 pb-1"><b>CCBU Web Portal <span class="badge bg-primary pull-right">POC</span></b></div></li>
+				</ol>
+			</div>
+		</div>
 	</div>
 	

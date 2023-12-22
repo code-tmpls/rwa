@@ -11,9 +11,12 @@
 body { font-family: Arial, sans-serif !important;font-size:13px;line-height:22px; }
 .badge { font-family: Arial, sans-serif;font-size:12px; }
 .f12 { font-size:12px; }
+.f16 { font-size:16px; }
 .f18 { font-size:18px; }
 .f24 { font-size:24px; }
-.mleft5p { margin-left:5px; }
+.mLeft5p { margin-left:5px; }
+.mRight5p { margin-right:5px; }
+.mtop10p { margin-top:10px; }
 
 .white { color:#fff; }
 .black { color:#000; }
@@ -23,7 +26,7 @@ body { font-family: Arial, sans-serif !important;font-size:13px;line-height:22px
 .pink-5 { color:#e99393; }
 
 
-/* */
+/* my-resume-overview ::: START */
 .resume-profilepic { width:120px;height:120px;border-radius:50%; }
 .resume-title { text-transform:uppercase;color:#ddd; }
 .resume-socialMedia { display:flex; }
@@ -34,6 +37,8 @@ body { font-family: Arial, sans-serif !important;font-size:13px;line-height:22px
 .resume-cardBody { background-color:#282c34;color:#999; }
 .resume-overlay { height: 100%;width: 0;position: fixed;z-index: 1;top: 0;right: 0;background-color:#21252b;color:#999;
   overflow-x: hidden;transition: 0.6s; }
+/* my-resume-overview ::: END */
+
 
 </style>
 <script>
@@ -44,7 +49,20 @@ function resume(status) {
 </head>
 <body>
   
-<span style="font-size:30px;cursor:pointer" onclick="javascript:resume('open');">&#9776; open</span>
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-5">
+ 
+</div><!--/.col-sm-3 -->
+<div class="col-md-4">
+</div><!--/.col-sm-4 -->
+<div class="col-md-3">
+<!-- -->
+<?php include_once 'templates/resume/profileCard.php'; ?>
+<!-- -->
+</div><!--/.col-sm-4 -->
+</div><!--/.row -->
+</div><!--/.container-fluid -->
 
 <div id="my-resume-overview" class="resume-overlay">
  <!-- -->
