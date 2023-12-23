@@ -44,6 +44,9 @@
 		<span class="grey-3"><b>Design Architecture :</b></span> Microservices Architecture
 	  </div>
 	  <div class="pt-3">
+	   <span class="grey-3"><b>Design Patterns :</b> OOP's SOLID Principle</span> 
+	  </div>
+	  <div class="pt-3">
 		<span class="grey-3"><b>Build Tools :</b></span> Apache Ant, Apache Maven and Gradle Build Tool
 	  </div>
 	  <div class="pt-3">
@@ -152,9 +155,6 @@
 	  </div>
 	  <div class="pt-3">
 	   <span class="grey-3"><b>Version Control : Github and Bitbucket</b></span> 
-	  </div>
-	  <div class="pt-3">
-	   <span class="grey-3"><b>Design Patterns :</b></span> 
 	  </div>
 	</div>
 </div>

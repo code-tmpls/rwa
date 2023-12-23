@@ -34,7 +34,7 @@
 .textRed-bgDark { color:#ebb5b1;padding-bottom:3px;border-bottom:1px solid #ebb5b1;cursor:pointer; }
 .textRed-bgDark:hover { color:#f99b95;border-bottom:1px solid #f99b95; }
 </style>
-			<span class="textRed-bgDark">Check My Availability</span>
+			<!--<span class="textRed-bgDark">Check My Availability</span>-->
 		</div>
 		<hr/>
 		<div>
