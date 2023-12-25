@@ -47,6 +47,10 @@ body::-webkit-scrollbar-thumb { background-color: #000000; }
 .resume-cardBody { background-color:#282c34;color:#999; }
 .resume-overlay { height: 100%;width: 0;position: fixed;z-index: 3;top: 0;right: 0;background-color:#21252b;color:#999;
   overflow-x: hidden;transition: 0.6s; }
+.resume-overlay { font-family: Arial, sans-serif !important;font-size:13px;line-height:22px; }
+.resume-overlay::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);box-shadow: inset 0 0 2px rgba(0,0,0,0.3);background-color: #F5F5F5; }         
+.resume-overlay::-webkit-scrollbar { width:6px;height: 6px;background-color: #F5F5F5; }        
+.resume-overlay::-webkit-scrollbar-thumb { background-color: #000000; }
 /* my-resume-overview ::: END */
 
 
@@ -179,6 +183,7 @@ function resume(status) {
  }
  document.title = pageTitle;
  document.getElementById("my-resume-overview").style.width = (status ==='open')?'100%':'0%';
+ document.body.style.overflow = (status ==='open')?'hidden':'scroll';
 }
 
 function load_blog_list(id,list, pattern){
