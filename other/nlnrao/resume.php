@@ -94,93 +94,9 @@ let list1 = [{
 		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
 		createdOn:'03 January 2022',
 		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
 	}];
 
 let list2 = [{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
 		tags:['Java','Spring Boot', 'Spring Cloud'],
 		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
 		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
@@ -210,93 +126,9 @@ let list3 = [{
 		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
 		createdOn:'03 January 2022',
 		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
 	}];
 	
 let list4 = [{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java','Spring Boot', 'Spring Cloud'],
-		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
-		tags:['Java Design Patterns'],
-		title:'An Example to understand the difference between <u>Abstract Factory</u> Design Pattern and <u>Factory Method</u> Design Pattern.',
-		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
-		keywords:["Abstract Factory","Factory Method","SOLID's Principle - Open/Closed principle"],
-		createdOn:'03 January 2022',
-		minRead: 5	
-	},{
 		tags:['Java','Spring Boot', 'Spring Cloud'],
 		title:'Building a Microservices Architecture with Spring Boot and Spring Cloud',
 		desc:'Dive into the world of design patterns with a clear example distinguishing Abstract Factory and Factory Method approaches',
@@ -403,30 +235,32 @@ function load_blog_list(id,list, pattern){
 <div class="col-md-9">
 <!-- -->
 <div class="row">
- <div class="col-md-12" style="margin-top:15px;"><span style="font-size:18px;"><b>Trending Frontend Development Articles</b></span><hr/></div>
+ <div class="col-md-12" style="margin-top:15px;">
+  <span style="font-size:18px;"><b>Trending Frontend Development Articles</b></span>
+  <button class="btn btn-outline-dark btn-sm pull-right f12"><b>VIEW MORE POSTS
+  <i class="fa fa-arrow-right" style="margin-left:5px;"></i>
+  </b></button>
+  <hr/>
+ </div>
 </div>
 <div class="row">
  <div id="bloglist1" class="col-md-6"></div><!--/.col-sm-6 -->
  <div id="bloglist2" class="col-md-6"></div><!--/.col-sm-6 -->
 </div>
-<div class="row">
- <div align="center" class="col-md-12" style="margin-top:15px;margin-bottom:15px;">
-	<button class="btn btn-outline-primary btn-sm"><b>View More Articles</b></button>
- </div>
-</div>
 
 <div class="row">
- <div class="col-md-12" style="margin-top:15px;"><span style="font-size:18px;"><b>Trending Backend Development Articles</b></span><hr/></div>
+ <div class="col-md-12" style="margin-top:15px;">
+ <span style="font-size:18px;"><b>THIS MONTH TRENDING</b></span>
+ <button class="btn btn-outline-dark btn-sm pull-right f12"><b>VIEW MORE POSTS
+ <i class="fa fa-arrow-right" style="margin-left:5px;"></i>
+ </b></button>
+ <hr/>
+ </div>
 </div>
 <div class="row">
  <div id="bloglist3" class="col-md-4"></div><!--/.col-sm-4 -->
  <div id="bloglist4" class="col-md-4"></div><!--/.col-sm-4 -->
  <div id="bloglist5" class="col-md-4"></div><!--/.col-sm-4 -->
-</div>
-<div class="row">
- <div align="center" class="col-md-12" style="margin-top:15px;margin-bottom:30px;">
-	<button class="btn btn-outline-primary btn-sm"><b>View More Articles</b></button>
- </div>
 </div>
 <!-- -->
 </div>

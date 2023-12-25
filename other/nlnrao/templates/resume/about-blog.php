@@ -4,7 +4,7 @@
 </style>
 <script type="text/javascript">
 function load_blogKeywords(id){
- let keywords=["HTML","CSS","Javascript","Typescript","ECMAScript","JQuery","Bootstrap", "Ant Design Framework",
+ let keywords=["HTML","CSS","TailWindCSS","Javascript","Typescript","ECMAScript","JQuery","Bootstrap", "Ant Design Framework",
  "Node.js","Express.js","Angular","React","Babel Compiler", "Webpack Build Tool", "Jest Framework","Mocha Framework",
  "Chai Framework","Sinon Framework","Istanbul Code Coverage Tool","Java","J2SE","J2EE","OOPs", "Collections Framework",
  "MultiThreading", 
@@ -14,10 +14,10 @@ function load_blogKeywords(id){
  "Monolithic Architecture", "Microservices", 
  "Apache Ant Build Tool", "Maven Build Tool", "Gradle Build Tool", "Junit Framework", "Mockito Framework", "FindBugs", "Sonarcube", 
  "Rest API", "H.323/SIP Protocols", "HTTP/HTTPS Protocols", "Server/Socket Programming", "WebSockets (Over TCP Protocols)", 
- "AMQP Protocol", "Apache Kafka", "RabbitMQ", 
+ "WebRTC","Streaming Protocols","AMQP Protocol", "Apache Kafka", "RabbitMQ", 
  "Android Studio", "Ionic Framework", "React Native", "Expo", "Firebase", "Electron.js", 
  "Microsoft SQL Server", "MySQL Server", "Oracle Database", "Cloud FireStore", 
- "AWS S3", "AWS EC2", "AWS Kinesis", "AWS Cloud Watch", "Github", "Bitbucket"];
+ "AWS S3", "AWS EC2","AWS Lambda", "AWS Kinesis", "AWS Cloud Watch", "Github", "Bitbucket"];
  let content='<div style="margin-top:25px;">';
  for(let index=0;index<keywords.length;index++){
   content+='<span class="badge" style="margin-right:3px;margin-bottom:5px;background-color:#ccc;color:#555;">'+keywords[index]+'</span>';
