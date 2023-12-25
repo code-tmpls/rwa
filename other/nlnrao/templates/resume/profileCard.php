@@ -1,7 +1,7 @@
 <style>
-.resume-profile-card { margin-top:15px;width:100%;position:relative; }
-.resume-profile-card-pic { position:absolute;z-index:1;left:50%;transform: translateX(-50%);width:100px;height:100px;border-radius:50%; }
-.resume-profile-card-div { position:absolute;z-index:-1;margin-top:60px;width:100%;height:auto;border:1px solid #21252b;border-radius:8px;padding-top:55px;padding-left:15px;padding-right:15px;padding-bottom:15px;color:#999;box-shadow:2px 2px 2px 2px #808080;
+.resume-profile-card { margin-top:15px;width:100%;height:310px;position:relative; }
+.resume-profile-card-pic { position:absolute;z-index:2;left:50%;transform: translateX(-50%);width:100px;height:100px;border-radius:50%; }
+.resume-profile-card-div { position:absolute;z-index:1;margin-top:60px;width:100%;height:auto;border:1px solid #21252b;border-radius:8px;padding-top:55px;padding-left:15px;padding-right:15px;padding-bottom:15px;color:#999;box-shadow:2px 2px 2px 2px #808080;
 background-color:#21252b; }
 .resume-profile-card-div-desc { font-size:13px;margin-top:10px;font-weight:400; }
 </style>
